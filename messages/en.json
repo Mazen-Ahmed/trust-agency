@@ -1,0 +1,55 @@
+{
+    "Navbar": {
+      "home": "Home",
+      "services": "services",
+      "about": "About",
+      "contact": "Contact"
+    },
+
+    "Home":{
+      "header":{
+        "together":"Together, We can create a Great future"
+      },
+      "quote":{
+        "weBelieve":"\"We believe the best is yet to come. \"",
+        "author":"Peter Gibbs",
+        "description":"Since we believe that providing unique and different values to the marketing field is better than any other gains, we decided to start this agency with new standards and methods! "
+      },
+      "services":{
+        "title":"What we do",
+        "description":"We help you to create a Trustful Branding Image",
+        "description2":"ACHIEVE YOUR GOALS WITH THE PROVEN EXPERTISE OF OUR TEAM, OUR CREATIVES WILL POLISH YOUR BRAND STORY AND MAKE SURE IT REFLECTS YOUR VISION AND VALUES. ",
+        "digitalMarketing":"Digital Marketing",
+        "digitalMarketingDescription":"We aim to help you reach your target audience and achieve your marketing goals from SEO, paid advertising and social media marketing.",
+        "softwareDevelopment":"Software Services",
+        "softwareDevelopmentDescription":"Where we unleash your digital creativity, from designing and developing web application lications and websites, to mobile application lications, we meet your needs and design software solutions that precisely meet your requirements.",
+        "investment":" Investment services",
+        "investmentDescription":"We open the doors to the world of investment for you so that you can begin your investment journey with outstanding performance with specialists with extensive experience in any field you prefer.",
+        "legal":"Legal services",
+        "legalDescription":"We believe that providing the best legal services to our clients is our duty. Therefore, we offer you a wide range of high-quality legal services, through a team of lawyers with experience in various fields.",
+        "ecommerce":" E-commerce services",
+        "ecommerceDescription":"A true revolution in the world of shopping. We help you build your own platform to make it easier for your targeted customers to access your products and services from anywhere with ease, and achieve sales."
+      },
+      "clients":{
+        "title":"Our Clients",
+        "description":"At Trust Agency, we take pride in collaborating with businesses of all sizes - from startups that we've helped establish and flourish, to existing companies that we ' ve assisted in reinventing themselves and growing."
+      }
+    },
+    "About":{
+      "title":"About Us",
+      "we":"We are trust agency team.",
+      "description":"Trust Agency is a business and marketing company that emerged from the future.",
+      "journey":"Our journey into business began in 2023. ",
+      "goal":"We resolved to take steady, defined measures towards our goal.",
+      "ourTeam":"Meet Our Team",
+      "ourVision":"Our Vision",
+      "vision":"We want to be a leading company in the field of marketing and business, and we want to create a base of customers who trust us and have loyalty to us.  We want to expand within Egypt and the Gulf and spread across a wide range.",
+      "ourMission":"Our Mission",
+      "mission":"Our major purpose is to assist businesses succeed by building initiatives and delivering full services that enable them to achieve remarkable results. In the first year, we hope to target the success of 20 clients in Egypt and 5 clients beyond Egypt.  Share our successes and collaborate to become one of our cherished customers who receive outstanding service."
+    },
+    "Globals":{
+      "close":"Close",
+      "languages":"Languages",
+      "learnMore":"Learn More"
+    }
+  }
