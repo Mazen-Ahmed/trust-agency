@@ -24,7 +24,7 @@ const Quote = ({translation}) => {
       className="relative flex-1 w-full overflow-hidden "
       style={{ ...leftElement}}
     >
-        <Image src="/quote.png" fill  alt='img' className="object-cover w-36 h-36 md:w-full md:h-full " />
+        <Image src="/quote.png" fill  alt='img' className=" w-36 h-36 md:w-3/4 md:h-3/4" />
     </div>
 
     <div className="relative flex-1 pt-10 pl-4 ">
@@ -33,11 +33,11 @@ const Quote = ({translation}) => {
        style={{...rightElement }}
        >
         
-        <h1 className="relative z-10 px-3 text-2xl font-bold md:text-5xl" >
+        <h1 className="relative z-10 px-3 text-3xl font-bold md:text-5xl" >
         {translation.weBelieve}
         </h1>
         <div className="flex justify-end w-4/5 mt-4 " style={{color:"#fac360"}}>- {translation.author}</div>
-        <p className="px-5 mt-10 text-gray-500 ">
+        <p className="px-5 mt-10 text-xl text-gray-500 ">
           {translation.description}
         </p>
         <div className="flex justify-center ">
