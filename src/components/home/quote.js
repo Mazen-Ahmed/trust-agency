@@ -15,7 +15,7 @@ const Quote = ({translation}) => {
   }=useSlideElementAnimation(ref)
 
   return (
-  <div id="quot" ref={ref} className="relative flex flex-col pb-20 overflow-x-hidden xl:gap:0 gap-28 xl:flex-row lg:min-h-screen" >
+  <div id="quot" ref={ref} className="relative flex flex-col pb-20 xl:gap:0 gap-28 xl:flex-row lg:min-h-screen" >
 
     <div 
       className="relative flex-1 w-full overflow-hidden "
@@ -46,7 +46,7 @@ const Quote = ({translation}) => {
         </div>
        </div>
     </div>
-    <Blob height={300} position={{right:"-100px",bottom:0}}/>
+    <Blob height={300} width={200} position={{right:0,bottom:0}}/>
 
   </div>
   )

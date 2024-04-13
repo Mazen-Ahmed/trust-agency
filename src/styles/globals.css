@@ -21,7 +21,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: rgb(var(--foreground-rgb));
   background: #17181c;
   scroll-behavior: smooth;

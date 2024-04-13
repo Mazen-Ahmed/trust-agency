@@ -36,7 +36,11 @@ const ContactHeader = ({translation}) => {
        <span dir="ltr">+2 0111 234 5678</span>
        </p>
 
-       <FollowIcons/>
+       <FollowIcons
+        translation={{
+          follow:translation.follow
+       }}
+       />
      </div>
    </div>
    <h1 className="absolute bottom-0 left-0 text-6xl text-transparent uppercase lg:bottom-32 md:text-8xl bg-clip-text stroke-zinc-600"  

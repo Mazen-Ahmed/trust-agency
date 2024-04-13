@@ -12,10 +12,10 @@ const Services = ({translation}) => {
       rightElement
     }=useSlideElementAnimation(ref)
   return (
-    <div id="services" ref={ref} className="relative flex flex-col my-20 overflow-x-hidden md:px-10 lg:px-20">
+    <div id="services" ref={ref} className="relative flex flex-col my-20 md:px-10 lg:px-20">
         <div className="flex flex-col items-center justify-center">
             <h1 className="text-sm text-gray-500 uppercase"> {translation.title}</h1>
-            <h2 className="relative z-10 px-5 my-3 text-xl font-bold md:text-2xl lg:text-5xl" >
+            <h2 className="relative z-10 px-5 my-3 text-xl font-bold text-center md:text-2xl lg:text-5xl" >
              {translation.description}
             </h2>
             <h3 className="w-full text-center text-gray-500 uppercase text-md lg:w-1/2">
@@ -52,7 +52,7 @@ const Services = ({translation}) => {
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.ecommerceDescription}</p>
             </div>
         </div>
-        <Blob height={300} position={{left:"-100px",bottom:0}}/>
+        <Blob height={300} position={{left:-20,bottom:0}}/>
 
     </div>
 )};

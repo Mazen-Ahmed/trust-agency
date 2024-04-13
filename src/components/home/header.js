@@ -29,7 +29,7 @@ const Header = ({translation}) => {
       <motion.div 
       initial={{x:200,y:1000}}
       animate={{x:"-50px",y:"20%"}}>
-      <Blob height={300} position={{left:"-50px",top:"20%"}}/>
+      <Blob height={300} position={{left:"-20%",top:"20%"}}/>
       </motion.div>
     <div dir="ltr" className="flex justify-center leading-none align-start">
       <h1 className="heading" style={{"backgroundImage":`url("${images[currentIndex]}")`}}>

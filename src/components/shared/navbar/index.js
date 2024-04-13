@@ -20,7 +20,7 @@ const Navbar = ({translation}) => {
     }
 
   return (
-  <nav className={opened&&`sm:bg-black lg:bg-transparent shadow-none`}>
+  <nav style={{background:opened?"#000":"#17181c"}} className="shadow-none sm:bg-black lg:bg-transparent">
     <div className="flex items-center justify-between h-16 px-5 lg:h-32 md:px-10 lg:px-20">  
     <Link
     href={"/"}

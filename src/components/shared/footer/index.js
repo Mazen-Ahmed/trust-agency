@@ -15,7 +15,11 @@ const Footer = ({translation}) => {
             />
             <h1 className="text-4xl">Trust Agency</h1>
             <p className="text-sm text-gray-500">{translation.together}</p>
-            <FollowIcons/>
+            <FollowIcons 
+            translation={{
+                follow:translation.follow
+             }}
+            />
         </div>
         <div className="flex-1">
             <Image 

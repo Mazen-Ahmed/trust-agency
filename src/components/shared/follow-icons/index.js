@@ -1,14 +1,12 @@
 import { Link } from "navigation";
-import { useTranslations } from "next-intl";
 import { FaFacebookF,FaInstagram,   } from "react-icons/fa";
 import { FaXTwitter,FaLinkedinIn, FaYoutube, FaTiktok    } from "react-icons/fa6";
 
-const FollowIcons = () => {
-  const footerT=useTranslations("Footer")
+const FollowIcons = ({translation}) => {
 
   return (
     <div className="flex flex-col items-center justify-center mt-5">
-    <h1>{footerT("follow")}</h1>
+    <h1>{translation.follow}</h1>
     <div className="flex gap-4">
         <Link href="#" className="box-border p-1 m-0 bg-white rounded-md">
         <FaFacebookF className="w-5 h-5 p-0 text-blue-700"/>
