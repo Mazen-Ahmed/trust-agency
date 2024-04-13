@@ -41,8 +41,7 @@ export default About;
 
 
 export async function getStaticPaths() {
-  // Define an array of possible locale values (e.g., ["en", "es"])
-  const locales = ["en", "es"];
+  const locales = ["en", "ar"];
 
   return {
     paths: locales.map((locale) => ({ params: { locale } })),

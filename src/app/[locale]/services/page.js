@@ -1,12 +1,10 @@
+import React from "react";
 
-import { ContactHeader } from "components";
-
-
-const ContactUs = () => {
-  return <ContactHeader/>
+const Page = () => {
+  return <div>Page</div>;
 };
 
-export default ContactUs;
+export default Page;
 
 export async function getStaticPaths() {
   // Define an array of possible locale values (e.g., ["en", "es"])

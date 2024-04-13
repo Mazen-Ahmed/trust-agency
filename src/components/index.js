@@ -14,6 +14,7 @@ import Vision from "./about/vision";
 import Mission from "./about/mission";
 import Blob from "./shared/blob";
 import FollowIcons from "./shared/follow-icons";
+import ContactHeader from "./contact/header";
 
 export {
     Navbar,
@@ -31,5 +32,6 @@ export {
     Vision,
     Blob,
     Mission,
-    FollowIcons
+    FollowIcons,
+    ContactHeader
 }
