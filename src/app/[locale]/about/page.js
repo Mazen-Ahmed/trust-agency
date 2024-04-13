@@ -1,6 +1,6 @@
+export const dynamic = 'force-dynamic'
 import { AboutHeader, Mission, OurTeam, Vision } from "components";
 import { useTranslations } from "next-intl";
-
 const About = () => {
   const aboutT=useTranslations("About")
 
