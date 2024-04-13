@@ -26,9 +26,10 @@
 
 body {
   overflow-x: hidden !important;
-  color: rgb(var(--foreground-rgb));
   background: #17181c;
   scroll-behavior: smooth;
+  -webkit-text-fill-color: initial;  
+
 }
 
 
