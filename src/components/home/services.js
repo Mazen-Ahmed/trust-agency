@@ -4,6 +4,7 @@ import { Blob} from "components"
 import { useRef } from "react";
 import { useSlideElementAnimation } from "hooks";
 import {useLocale} from "next-intl"
+import { Link } from "navigation";
 
 const Services = ({translation}) => {
     const locale=useLocale()
@@ -27,31 +28,33 @@ const Services = ({translation}) => {
         </div>
 
         <div style={{...leftElement}} className="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-3">
-            <div className="flex flex-col items-center justify-center gap-3 text-center"> 
+            <Link href={"/services/digital-marketing"}>
+            <div className="flex flex-col items-center justify-center gap-3 text-center digital-marketing"> 
                 <Image  src={"/DMS.png"} width={70} height={70} alt="digital marketing" />
-                <h1 className="text-lg font-bold">{translation.digitalMarketing}</h1>
+                <h1 className="text-lg font-bold dm">{translation.digitalMarketing}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500"> {translation.digitalMarketingDescription}</p>
             </div>
-            <div className="flex flex-col items-center justify-center gap-3 text-center"> 
+            </Link>
+            <div className="flex flex-col items-center justify-center gap-3 text-center software"> 
                 <Image  src={"/SWS.png"} width={70} height={70} alt="digital marketing" />
-                <h1 className="text-lg font-bold">{translation.softwareDevelopment}</h1>
-                <p className="w-4/5 text-sm font-light text-gray-500">{translation.softwareDevelopmentDescription}</p>
+                <h1 className="text-lg font-bold sw">{translation.softwareDevelopment}</h1>
+                <p className="w-4/5 text-sm font-light text-gray-500 ">{translation.softwareDevelopmentDescription}</p>
             </div>
-            <div className="flex flex-col items-center justify-center gap-3 text-center"> 
+            <div className="flex flex-col items-center justify-center gap-3 text-center investment"> 
                 <Image  src={"/IS.png"} width={70} height={70} alt="digital marketing" />
-                <h1 className="text-lg font-bold">{translation.investment}</h1>
+                <h1 className="text-lg font-bold inv">{translation.investment}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.investmentDescription}</p>
             </div>
         </div>
-        <div style={{...rightElement}} className="grid grid-cols-1 gap-4 pb-10 mt-10 lg:grid-cols-2">
+        <div style={{...rightElement}} className="grid grid-cols-1 gap-4 pb-10 mt-10 lg:grid-cols-2 legal">
             <div className="flex flex-col items-center justify-center gap-3 text-center"> 
                 <Image  src={"/LS.png"} width={70} height={70} alt="digital marketing" />
-                <h1 className="text-lg font-bold">{translation.legal}</h1>
+                <h1 className="text-lg font-bold lg">{translation.legal}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.legalDescription}</p>
             </div>
-            <div className="flex flex-col items-center justify-center gap-3 text-center"> 
+            <div className="flex flex-col items-center justify-center gap-3 text-center ecommerce"> 
                 <Image  src={"/ECMS.png"} width={70} height={70} alt="digital marketing" />
-                <h1 className="text-lg font-bold">{translation.ecommerce}</h1>
+                <h1 className="text-lg font-bold em">{translation.ecommerce}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.ecommerceDescription}</p>
             </div>
         </div>

@@ -39,8 +39,8 @@ const Header = ({translation}) => {
         Trust-  
       </h1>
       <div dir="ltr" className="flex-col items-center self-center justify-center hidden md:flex ">
-        <Image  src="/logo-white.png" width={150} height={150} className="w-14 h-14 md:w-32 md:h-32 xl:w-56 xl:h-56"   alt="logo"/>
-        <h1 className="text-xs tracking-widest uppercase md:text-sm">Trust Agency</h1>
+        <Image  src="/logo-white.png" width={150} height={150}  className="object-cover"   alt="logo"/>
+        <h1 className="text-xs tracking-widest uppercase md:text-sm" style={{letterSpacing:4}}>Trust Agency</h1>
       </div>
     </div>
     <div  className="flex flex-col justify-center leading-none align-start md:flex-row ">

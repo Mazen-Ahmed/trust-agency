@@ -20,6 +20,11 @@
   }
 }
 
+*{
+    color-scheme: only light;
+  
+}
+
 body {
   overflow-x: hidden !important;
   color: rgb(var(--foreground-rgb));
@@ -69,6 +74,22 @@ body {
 .client:hover .image{
   margin-top: -30px;
  position: relative;
+}
+
+.digital-marketing:hover .dm{
+  color:#ef7200
+}
+.software:hover .sw{
+  color:#6f00a5
+}
+.investment:hover .inv{
+  color:#01a8ed
+}
+.legal:hover .lg{
+  color:#1c275e
+}
+.ecommerce:hover .em{
+  color:#fec104
 }
 
 

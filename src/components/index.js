@@ -15,6 +15,7 @@ import Mission from "./about/mission";
 import Blob from "./shared/blob";
 import FollowIcons from "./shared/follow-icons";
 import ContactHeader from "./contact/header";
+import DigitalMarketingHeader from "./services/digital-marketing/header";
 
 export {
     Navbar,
@@ -33,5 +34,6 @@ export {
     Blob,
     Mission,
     FollowIcons,
-    ContactHeader
+    ContactHeader,
+    DigitalMarketingHeader
 }
