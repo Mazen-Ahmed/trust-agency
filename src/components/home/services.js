@@ -3,8 +3,11 @@ import Image from "next/image"
 import { Blob} from "components"
 import { useRef } from "react";
 import { useSlideElementAnimation } from "hooks";
+import {useLocale} from "next-intl"
 
 const Services = ({translation}) => {
+    const locale=useLocale()
+    
     const ref=useRef()
   
     const {
@@ -52,7 +55,7 @@ const Services = ({translation}) => {
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.ecommerceDescription}</p>
             </div>
         </div>
-        <Blob height={300} position={{left:-20,bottom:0}}/>
+        <Blob height={300} position={{...locale==="ar"?{right:0}:{left:0},bottom:0}}/>
 
     </div>
 )};

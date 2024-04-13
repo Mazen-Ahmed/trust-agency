@@ -4,9 +4,12 @@ import Image from 'next/image'
 import {Blob} from "components"
 import { useSlideElementAnimation } from "hooks";
 import { useRef } from "react";
+import {useLocale} from "next-intl"
 
 
 const Quote = ({translation}) => {
+  const locale=useLocale()
+
   const ref=useRef()
   
   const {
@@ -30,7 +33,7 @@ const Quote = ({translation}) => {
        style={{...rightElement }}
        >
         
-        <h1 className="relative z-10 px-5 text-2xl font-bold md:text-5xl" >
+        <h1 className="relative z-10 px-3 text-2xl font-bold md:text-5xl" >
         {translation.weBelieve}
         </h1>
         <div className="flex justify-end w-4/5 mt-4 " style={{color:"#fac360"}}>- {translation.author}</div>
@@ -46,7 +49,7 @@ const Quote = ({translation}) => {
         </div>
        </div>
     </div>
-    <Blob height={300} width={200} position={{right:0,bottom:0}}/>
+    <Blob height={300} width={200} position={{...locale==="ar"?{left:0}:{right:0},bottom:0}}/>
 
   </div>
   )

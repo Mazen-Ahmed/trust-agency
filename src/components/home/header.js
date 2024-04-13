@@ -3,8 +3,11 @@ import Image from "next/image"
 import {Arrow, Blob} from "components"
 import { useEffect, useState } from "react";
 import {motion} from 'framer-motion'
+import {useLocale} from "next-intl"
 const Header = ({translation}) => {
-    const images = [
+  const locale=useLocale()
+
+  const images = [
         '/text-bg1.png',
         '/text-bg2.png',
         '/text-bg3.png',
@@ -29,7 +32,7 @@ const Header = ({translation}) => {
       <motion.div 
       initial={{x:200,y:1000}}
       animate={{x:"-50px",y:"20%"}}>
-      <Blob height={300} position={{left:"-20%",top:"20%"}}/>
+      <Blob height={300} width={100} position={{...locale==="ar"?{right:0}:{left:0},top:"20%"}}/>
       </motion.div>
     <div dir="ltr" className="flex justify-center leading-none align-start">
       <h1 className="heading" style={{"backgroundImage":`url("${images[currentIndex]}")`}}>
