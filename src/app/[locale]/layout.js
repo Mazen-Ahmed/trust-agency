@@ -2,6 +2,8 @@ import { Footer, Navbar } from "components";
 import { Poppins,Tajawal } from "next/font/google";
 import ClientProviders from "providers/use-client-providers";
 import { useTranslations } from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
+
 import "styles/globals.css";
 
 const poppins = Poppins({weight:"400", subsets: ["latin"] });
@@ -14,8 +16,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children,params }) {
+  
+  unstable_setRequestLocale(params.locale);
 
   const t=useTranslations("Navbar")
+
   const globals=useTranslations("Globals")
 
   const footer=useTranslations("Footer")
@@ -46,4 +51,10 @@ export default function RootLayout({ children,params }) {
       </body>
     </html>
   );
+}
+
+const locales = ['en', 'ar'];
+ 
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
 }

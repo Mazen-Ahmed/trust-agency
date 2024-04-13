@@ -1,7 +1,10 @@
 import { useTranslations } from "next-intl";
 import { Clients, Header, Quote,Services } from "components";
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-export default function Home() {
+
+export default function Home({params}) {
+  unstable_setRequestLocale(params.locale)
   const globalT=useTranslations("Globals")
   const headerT=useTranslations("Home.header")
   const quoteT=useTranslations("Home.quote")
@@ -49,11 +52,9 @@ export default function Home() {
     </main>
   );
 }
-export async function getStaticPaths() {
-  const locales = ["en", "ar"];
 
-  return {
-    paths: locales.map((locale) => ({ params: { locale } })),
-    fallback: "blocking",  // Optional: handle missing paths (explained later)
-  };
+const locales = ['en', 'ar'];
+ 
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
 }
