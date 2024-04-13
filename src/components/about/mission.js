@@ -13,7 +13,7 @@ const Mission = ({translation}) => {
     <div  ref={ref} className="flex flex-col pb-20 lg:flex-row"  style={{minHeight:"100vh",backgroundPosition:"center"}}>
  
 
-    <div className="relative flex flex-col justify-center order-2 pt-10 pl-4 md:order-1 " style={{flex:3,...leftElement}}>
+    <div className="relative flex flex-col justify-center order-2 px-5 pt-10 md:order-1 md:px-10 lg:px-20" style={{flex:3,...leftElement}}>
       
         <h1 className="relative z-10 px-5 text-5xl "  style={{color:"#fbc460"}}>
             {translation.ourMission}

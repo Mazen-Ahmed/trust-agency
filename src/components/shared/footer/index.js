@@ -2,7 +2,7 @@ import Image from "next/image"
 import {Link,} from "navigation"
 import FollowIcons from "../follow-icons";
 
-const Footer = () => {
+const Footer = ({translation}) => {
   return( 
   <footer className="bottom-0 w-full px-5 py-3 md:px-10 lg:px-20" style={{background:"#1f2023"}}>
     <div className="flex flex-col gap-10 lg:flex-row">
@@ -14,7 +14,7 @@ const Footer = () => {
                 height={100}
             />
             <h1 className="text-4xl">Trust Agency</h1>
-            <p className="text-sm text-gray-500">together we create the future</p>
+            <p className="text-sm text-gray-500">{translation.together}</p>
             <FollowIcons/>
         </div>
         <div className="flex-1">
@@ -29,21 +29,21 @@ const Footer = () => {
     </div>
     <div className="flex flex-col gap-10 pt-3 border-t border-white lg:flex-row">
     <div className="flex items-center justify-center flex-1 order-2 lg:order-1">
-        <p className="text-sm text-gray-500">Copyright @2024 | All rights reserved</p>
+        <p className="text-sm text-gray-500">{translation.copyrights}</p>
     </div>
     <div className="flex flex-wrap items-center justify-center flex-1 order-1 gap-8 lg:order-2">
-        <h1 className="text-white">Links:</h1>
+        <h1 className="text-white">{translation.links}</h1>
         <Link className="text-gray-400 " href={"/"}>
-                Home
+                {translation.home}
             </Link>
             <Link className="text-gray-400 " href={"/#services"}>
-                Services
+                {translation.services}
             </Link>
             <Link className="text-gray-400 " href={"/about"}>
-                 About us
+                 {translation.about}
             </Link>
             <Link className="text-gray-400 " href={"/contact"}>
-                Contact us
+                {translation.contact}
             </Link>
 
     </div>

@@ -52,5 +52,14 @@
       "languages":"Languages",
       "learnMore":"Learn More"
     },
-    "Footer":{}
+    "Contact":{
+      "title":"Contact Us"
+    },
+    "Footer":{
+      "follow":"Follow us on:",
+      "links":"Links:",
+      "copyrights":"Copyright @2024 | All rights reserved",
+      "together":"Together, We can create a Great future"
+
+    }
   }

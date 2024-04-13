@@ -12,7 +12,7 @@ const Services = ({translation}) => {
       rightElement
     }=useSlideElementAnimation(ref)
   return (
-    <div id="services" ref={ref} className="relative flex flex-col my-20 md:px-10 lg:px-20">
+    <div id="services" ref={ref} className="relative flex flex-col my-20 overflow-x-hidden md:px-10 lg:px-20">
         <div className="flex flex-col items-center justify-center">
             <h1 className="text-sm text-gray-500 uppercase"> {translation.title}</h1>
             <h2 className="relative z-10 px-5 my-3 text-xl font-bold md:text-2xl lg:text-5xl" >

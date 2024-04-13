@@ -19,11 +19,11 @@ export default function RootLayout({ children,params }) {
   
   unstable_setRequestLocale(params.locale);
 
-  const t=useTranslations("Navbar")
+  const translationT=useTranslations("Navbar")
 
-  const globals=useTranslations("Globals")
+  const globalsT=useTranslations("Globals")
 
-  const footer=useTranslations("Footer")
+  const footerT=useTranslations("Footer")
   
   return (
     <html dir={params.locale==="ar"?"rtl":"ltr"} lang={params.locale} style={{ 
@@ -36,18 +36,28 @@ export default function RootLayout({ children,params }) {
         <Navbar 
           locale={params.locale}
           translation={{
-            home:t("home"),
-            services:t("services"),
-            about:t("about"),
-            contact:t("contact"),
-            languages:globals("languages"),
-            close:globals("close")
+            home:translationT("home"),
+            services:translationT("services"),
+            about:translationT("about"),
+            contact:translationT("contact"),
+            languages:globalsT("languages"),
+            close:globalsT("close")
             }}
         />
         <ClientProviders>
           {children}
         </ClientProviders>
-        <Footer t={footer}/>
+        <Footer
+         translation={{
+          follow:footerT("follow"),
+          links:footerT("links"),
+          copyrights:footerT("copyrights"),
+          together:footerT("together"),
+          home:translationT("home"),
+          services:translationT("services"),
+          about:translationT("about"),
+          contact:translationT("contact"),
+        }}/>
       </body>
     </html>
   );

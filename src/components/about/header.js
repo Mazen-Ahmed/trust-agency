@@ -7,7 +7,7 @@ const AboutHeader = ({translation}) => {
   const locale=useLocale()
     
   return (
-    <motion.header initial={{y:100,opacity:0}} animate={{y:0,opacity:1}} className="relative flex flex-col h-screen py-3 lg:h-32 md:px-10 lg:px-20"
+    <motion.header initial={{y:100,opacity:0}} animate={{y:0,opacity:1}} className="relative flex flex-col min-h-screen py-3 lg:h-32 md:px-10 lg:px-20"
      style={{minHeight:600,}}
      >
             <Blob height={300} position={{right:"40%",top:"20%"}}/>
@@ -20,20 +20,20 @@ const AboutHeader = ({translation}) => {
         </div>
     <div className="flex flex-col gap-10 mx-10 mb-40 lg:gap-20 md:flex-row lg:mx-36">
       <div className="flex flex-col items-center self-center justify-center justify-self-center">
-        <Image  src="/logo-white.png" width={150} height={150} className="w-14 h-14 md:w-32 md:h-32 xl:w-56 xl:h-56"   alt="logo"/>
-        <h1 className="text-xs tracking-widest uppercase " style={{letterSpacing:9}}>Trust Agency</h1>
+        <Image  src="/logo-white.png" width={150} height={150} className="relative "   alt="logo"/>
+        <h1 className="text-lg tracking-widest uppercase " style={{letterSpacing:9}}>Trust Agency</h1>
       </div>
       <div className="flex flex-col items-start justify-center" >
       <h1 className="relative z-10 text-xl font-bold uppercase lg:text-3xl" >
         {translation.we}
         </h1>
-        <p className="h-8 my-4 mb-6 text-xs text-gray-500 break-words xs:20 md:text-lg">
+        <p className="h-8 my-4 mb-6 text-lg text-gray-500 break-words xs:20 md:text-xl">
         {translation.description}
         </p>
-        <p className="h-8 my-2 text-xs text-gray-500 break-words xs:20 md:text-lg">
+        <p className="h-8 my-2 text-lg text-gray-500 break-words xs:20 md:text-xl">
         {translation.journey}
         </p>
-        <p className="h-8 my-2 text-xs text-gray-500 break-words xs:20 md:text-lg">
+        <p className="h-8 my-2 text-lg text-gray-500 break-words xs:20 md:text-xl">
         {translation.goal}
         </p>
 

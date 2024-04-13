@@ -16,7 +16,7 @@ const Vision = ({translation}) => {
         <Image src="/vision.png" fill  alt='img' className="object-cover w-24 h-24 md:object-contain md:w-full md:h-full" />
     </div>
 
-    <div  className="relative flex flex-col justify-center flex-1 pt-10 pl-4 " style={{flex:3,...rightElement}}>
+    <div  className="relative flex flex-col justify-center flex-1 px-5 pt-10 md:px-10 lg:px-20 " style={{flex:3,...rightElement}}>
       
         <h1 className="relative z-10 px-5 text-5xl "  style={{color:"#fbc460"}}>
             {translation.ourVision}
