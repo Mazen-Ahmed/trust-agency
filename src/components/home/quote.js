@@ -33,7 +33,7 @@ const Quote = ({translation}) => {
        style={{...rightElement }}
        >
         
-        <h1 className="relative z-10 px-3 text-3xl font-bold md:text-5xl" >
+        <h1 className="relative z-10 px-3 text-3xl font-bold text-white md:text-5xl" >
         {translation.weBelieve}
         </h1>
         <div className="flex justify-end w-4/5 mt-4 " style={{color:"#fac360"}}>- {translation.author}</div>
