@@ -1,32 +1,52 @@
 "use client"
-import Image from "next/image"
-import { useFadeElementAnimation } from "hooks";
-import { useRef } from "react";
+import {Container, HeaderTitle} from "components"
 
-const Header = () => {
-    const ref=useRef()
-    
-    const { element} =useFadeElementAnimation()
+
+const Header = ({translation}) => {
+  const {
+    title,
+    branding,
+    unleash,
+    brandingDescription,
+    brandingPoint1,
+    brandingPoint2,
+    brandingPoint3,
+    brandingPoint4,
+    crafting,
+    ready
+  }=translation
+  
   return(
-    <div  ref={ref} className="flex flex-col pb-20 lg:flex-row"  style={{minHeight:"100vh",backgroundPosition:"center",...element}}>
- 
-
-    <div className="relative flex flex-col justify-center order-2 px-5 pt-10 md:order-1 md:px-10 lg:px-20" style={{flex:3}}>
-      
-        <h1 className="relative z-10 px-5 text-5xl "  style={{color:"#fbc460"}}>
-            dqwq
-        </h1>
-        <p className="px-5 mt-10 text-white">
-dqwdw
-        </p>
-       
-    </div>
-
-    <div className="relative order-1 w-full overflow-hidden md:order-2"  style={{flex:2}}>
-        <Image src="/mission.png" fill  alt='img' className="object-cover w-24 h-24 md:object-contain md:w-full md:h-full" />
-    </div>
-
-  </div>  
+    <>
+    <HeaderTitle title={title} />
+    <Container  imageSrc={"/branding.png"} fade >
+      <div>
+          <h1>
+        <li  className="text-3xl " style={{listStyleType:"square"}}>
+            {branding}
+          </li>
+          </h1>
+          <p style={{color:"#FFC761"}} className="my-4 text-md" >{unleash}</p>
+          <p  className="my-6 text-gray-400 text-md" >
+          {brandingDescription}
+           </p>
+          <div  className="my-6 text-gray-400 text-md" >
+          <ul >
+            <li>- {brandingPoint1}</li>
+            <li>- {brandingPoint2}</li>
+            <li>- {brandingPoint3}</li>
+            <li>- {brandingPoint4}</li>
+          </ul>
+           </div>
+          <p  className="my-6 text-gray-400 text-md" >
+          {crafting}
+           </p>
+          <p  className="my-6 text-gray-400 text-md" >
+          {ready}
+           </p>
+      </div>
+    </Container>
+    </>
   );
 };
 

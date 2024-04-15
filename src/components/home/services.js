@@ -35,28 +35,39 @@ const Services = ({translation}) => {
                 <p className="w-3/4 text-sm font-light text-gray-500"> {translation.digitalMarketingDescription}</p>
             </div>
             </Link>
+
+            <Link href={"/services/software"}>
             <div className="flex flex-col items-center justify-center gap-3 text-center software"> 
                 <Image  src={"/SWS.png"} width={70} height={70} alt="digital marketing" />
                 <h1 className="text-lg font-bold sw">{translation.softwareDevelopment}</h1>
                 <p className="w-4/5 text-sm font-light text-gray-500 ">{translation.softwareDevelopmentDescription}</p>
             </div>
+            </Link>
+            <Link href={"/services/investment"}>
             <div className="flex flex-col items-center justify-center gap-3 text-center investment"> 
                 <Image  src={"/IS.png"} width={70} height={70} alt="digital marketing" />
                 <h1 className="text-lg font-bold inv">{translation.investment}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.investmentDescription}</p>
             </div>
+            </Link>
+
         </div>
         <div style={{...rightElement}} className="grid grid-cols-1 gap-4 pb-10 mt-10 lg:grid-cols-2 legal">
+            <Link href={"/services/legal"}>
             <div className="flex flex-col items-center justify-center gap-3 text-center"> 
                 <Image  src={"/LS.png"} width={70} height={70} alt="digital marketing" />
                 <h1 className="text-lg font-bold lg">{translation.legal}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.legalDescription}</p>
             </div>
+            </Link>
+
+            <Link href={"/services/Ecommerce"}>
             <div className="flex flex-col items-center justify-center gap-3 text-center ecommerce"> 
                 <Image  src={"/ECMS.png"} width={70} height={70} alt="digital marketing" />
                 <h1 className="text-lg font-bold em">{translation.ecommerce}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.ecommerceDescription}</p>
             </div>
+            </Link>
         </div>
         <Blob height={300} position={{...locale==="ar"?{right:0}:{left:0},bottom:0}}/>
 

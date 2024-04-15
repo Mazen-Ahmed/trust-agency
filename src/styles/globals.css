@@ -34,19 +34,25 @@ body {
 }
 
 
+
 .heading{
-  font-size: 220px;
+  font-size: 160px;
   background-repeat: repeat;
   background-position: center;
   -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   -webkit-text-fill-color: transparent;
   user-select: none;
-  transition: ease-in-out .2s;
-  
-  font-weight: 600;
+  transition: ease-in-out .4s;
+  font-weight: 900;
+  position: relative;
+  z-index: -1;
+  color: inherit;
 }
+
 
 .underline-word{
   position: relative;
@@ -60,6 +66,23 @@ body {
   bottom: -2px;
   align-self: center;
 }
+
+.underline-title{
+  position: relative;
+}
+.underline-title::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: calc(100% - 60%); /* Adjust based on your preference */  
+  left: 30%; /* Adjust based on your preference */
+  right: 30%;
+  background-color: currentColor; /* Inherits text color */
+  bottom: -10px;
+  align-self: center;
+}
+
+
 .shorter::after {
   width: 50px;
 }
@@ -96,9 +119,10 @@ body {
 
 
 
+
 @media only screen and (max-width:1050px)  {
   .heading{
-    font-size: 160px;
+    font-size: 130px;
    }
 
 }

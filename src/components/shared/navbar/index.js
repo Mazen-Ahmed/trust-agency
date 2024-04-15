@@ -30,7 +30,10 @@ const Navbar = ({translation}) => {
     <div className="items-center justify-between hidden gap-10 lg:flex ">
             <Link  
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/")&& "hover:text-yellow-400"}`}
-            style={{textShadow:isActive("/")&&"1px 2px 2px #fff"}}
+            style={{
+                textShadow:isActive("/")&&"1px 2px 2px #fff",
+                fontWeight: isActive("/")&&"bold"
+            }}
             href={"/"}
             >
               <BiHome className="w-5 h-5"/>
@@ -40,7 +43,10 @@ const Navbar = ({translation}) => {
             <Link  
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/#services")&& "hover:text-yellow-400"}`}
             scroll={pathname==="/"&&false} onClick={()=> pathname==="/"&&scrollToSectionHandler("services")}  
-            style={{textShadow:isActive("/#services")&&"1px 2px 2px #fff"}}
+            style={{
+                textShadow:isActive("/#services")&&"1px 2px 2px #fff",
+                fontWeight: isActive("/#services")&&"bold"
+            }}
             href={"/#services"}
             >
                 <MdOutlineHomeRepairService className="w-5 h-5"/>
@@ -49,7 +55,10 @@ const Navbar = ({translation}) => {
             
             <Link  
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/about")&& "hover:text-yellow-400"}`}
-            style={{textShadow: isActive("/about")&&"1px 2px 2px #fff"}}
+            style={{
+            textShadow: isActive("/about")&&"1px 2px 2px #fff",
+            fontWeight: isActive("/about")&&"bold"
+            }}
             href={"/about"}
             >
                 <FaCircleInfo className="w-5 h-5"/>
@@ -57,7 +66,10 @@ const Navbar = ({translation}) => {
             </Link>
             <Link  
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/contact")&& "hover:text-yellow-400"}`}
-            style={{textShadow:isActive("/contact")&&"1px 2px 2px #fff"}}
+            style={{
+            textShadow:isActive("/contact")&&"1px 2px 2px #fff",
+            fontWeight: isActive("/contact")&&"bold"
+            }}
             href={"/contact"}
             >
                 <RiContactsBookLine className="w-5 h-5"/>

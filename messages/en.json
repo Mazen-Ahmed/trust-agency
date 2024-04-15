@@ -1,65 +1,291 @@
 {
-    "Navbar": {
-      "home": "Home",
-      "services": "services",
-      "about": "About",
-      "contact": "Contact"
-    },
+	"Navbar": {
+		"home": "Home",
+		"services": "services",
+		"about": "About",
+		"contact": "Contact"
+	},
 
-    "Home":{
-      "header":{
-        "together":"Together, We can create a Great future"
-      },
-      "quote":{
-        "weBelieve":"\"We believe the best is yet to come. \"",
-        "author":"Peter Gibbs",
-        "description":"Since we believe that providing unique and different values to the marketing field is better than any other gains, we decided to start this agency with new standards and methods! "
-      },
-      "services":{
-        "title":"What we do",
-        "description":"We help you to create a Trustful Branding Image",
-        "description2":"ACHIEVE YOUR GOALS WITH THE PROVEN EXPERTISE OF OUR TEAM, OUR CREATIVES WILL POLISH YOUR BRAND STORY AND MAKE SURE IT REFLECTS YOUR VISION AND VALUES. ",
-        "digitalMarketing":"Digital Marketing",
-        "digitalMarketingDescription":"We aim to help you reach your target audience and achieve your marketing goals from SEO, paid advertising and social media marketing.",
-        "softwareDevelopment":"Software Services",
-        "softwareDevelopmentDescription":"Where we unleash your digital creativity, from designing and developing web application lications and websites, to mobile application lications, we meet your needs and design software solutions that precisely meet your requirements.",
-        "investment":" Investment services",
-        "investmentDescription":"We open the doors to the world of investment for you so that you can begin your investment journey with outstanding performance with specialists with extensive experience in any field you prefer.",
-        "legal":"Legal services",
-        "legalDescription":"We believe that providing the best legal services to our clients is our duty. Therefore, we offer you a wide range of high-quality legal services, through a team of lawyers with experience in various fields.",
-        "ecommerce":" E-commerce services",
-        "ecommerceDescription":"A true revolution in the world of shopping. We help you build your own platform to make it easier for your targeted customers to access your products and services from anywhere with ease, and achieve sales."
-      },
-      "clients":{
-        "title":"Our Clients",
-        "description":"At Trust Agency, we take pride in collaborating with businesses of all sizes - from startups that we've helped establish and flourish, to existing companies that we ' ve assisted in reinventing themselves and growing."
-      }
-    },
-    "About":{
-      "title":"About Us",
-      "we":"We are trust agency team.",
-      "description":"Trust Agency is a business and marketing company that emerged from the future.",
-      "journey":"Our journey into business began in 2023. ",
-      "goal":"We resolved to take steady, defined measures towards our goal.",
-      "ourTeam":"Meet Our Team",
-      "ourVision":"Our Vision",
-      "vision":"We want to be a leading company in the field of marketing and business, and we want to create a base of customers who trust us and have loyalty to us.  We want to expand within Egypt and the Gulf and spread across a wide range.",
-      "ourMission":"Our Mission",
-      "mission":"Our major purpose is to assist businesses succeed by building initiatives and delivering full services that enable them to achieve remarkable results. In the first year, we hope to target the success of 20 clients in Egypt and 5 clients beyond Egypt.  Share our successes and collaborate to become one of our cherished customers who receive outstanding service."
-    },
-    "Globals":{
-      "close":"Close",
-      "languages":"Languages",
-      "learnMore":"Learn More"
-    },
-    "Contact":{
-      "title":"Contact Us"
-    },
-    "Footer":{
-      "follow":"Follow us on:",
-      "links":"Links:",
-      "copyrights":"Copyright @2024 | All rights reserved",
-      "together":"Together, We can create a Great future"
+	"Home": {
+		"header": {
+			"together": "Together, \n We can create a Great future"
+		},
+		"quote": {
+			"weBelieve": "\"We believe the best is yet to come. \"",
+			"author": "Peter Gibbs",
+			"description": "Since we believe that providing unique and different values to the marketing field is better than any other gains, we decided to start this agency with new standards and methods! "
+		},
+		"services": {
+			"title": "What we do",
+			"description": "We help you to create a Trustful Branding Image",
+			"description2": "ACHIEVE YOUR GOALS WITH THE PROVEN EXPERTISE OF OUR TEAM, OUR CREATIVES WILL POLISH YOUR BRAND STORY AND MAKE SURE IT REFLECTS YOUR VISION AND VALUES. ",
+			"digitalMarketing": "Digital marketing services",
+			"digitalMarketingDescription": "We aim to help you reach your target audience and achieve your marketing goals from SEO, paid advertising and social media marketing.",
+			"softwareDevelopment": "Software Services",
+			"softwareDevelopmentDescription": "Where we unleash your digital creativity, from designing and developing web application lications and websites, to mobile application lications, we meet your needs and design software solutions that precisely meet your requirements.",
+			"investment": " Investment services",
+			"investmentDescription": "We open the doors to the world of investment for you so that you can begin your investment journey with outstanding performance with specialists with extensive experience in any field you prefer.",
+			"legal": "Legal services",
+			"legalDescription": "We believe that providing the best legal services to our clients is our duty. Therefore, we offer you a wide range of high-quality legal services, through a team of lawyers with experience in various fields.",
+			"ecommerce": " E-commerce services",
+			"ecommerceDescription": "A true revolution in the world of shopping. We help you build your own platform to make it easier for your targeted customers to access your products and services from anywhere with ease, and achieve sales."
+		},
+		"clients": {
+			"title": "Our Clients",
+			"description": "At Trust Agency, we take pride in collaborating with businesses of all sizes - from startups that we've helped establish and flourish, to existing companies that we ' ve assisted in reinventing themselves and growing."
+		}
+	},
+	"Services": {
+		"digitalMarketingData": {
+			"title": "Digital Marketing Services",
+			"branding": {
+				"branding": "Branding",
+				"unleash": "\"Unleash Your Brand's Potential\"",
+				"brandingDescription": "In today's competitive market, a strong brand is your secret weapon.\n  It's more than just a logo; it's the story, the feeling, and the promise that sets you apart.\n  We can help you build a brand that:",
+				"brandingPoint1": "Resonates with your target audience",
+				"brandingPoint2": "Clearly communicates your values and mission",
+				"brandingPoint3": "Creates lasting connections and loyalty",
+				"brandingPoint4": "Drives sales and growth",
+				"crafting": "From crafting a compelling brand identity to developing a consistent visual language, we'll guide you every step of the way.",
+				"ready": "Ready to unlock the power of branding?!"
+			},
+			"socialMediaManagement": {
+				"socialMediaManagement": "Social Media Management",
+				"subtitle1": "Social media is a powerful tool, but managing it effectively can be a challenge.",
+				"subtitle2": "Don't let your brand get lost in the noise.",
+				"subtitle3": "Our social media management services can help you:",
+				"smPoint1": "Craft a winning strategy:",
+				"smPoint1Description": "Identify your target audience, define your goals, and develop a content calendar that resonates.",
+				"smPoint2": "Create high-quality content:",
+				"smPoint2Description": "Engaging posts, eye-catching visuals, and stories that capture attention and drive engagement.",
+				"smPoint3": " Schedule and publish consistently:",
+				"smPoint3Description": "Stay active on all your platforms and build a strong online presence.",
+				"smPoint4": "Track and analyze results: ",
+				"smPoint4Description": "Measure your success and optimize your strategy for maximum impact.",
+				"freeUp": "Free up your time and focus on what you do best.",
+				"handleSm": "Let us handle the social media heavy lifting and help you achieve your marketing goals"
+			},
+			"contentCreation": {
+				"contentCreation": "Content Creation",
+				"subtitle1": "In the digital age, content is the lifeblood of any successful online presence.",
+				"subtitle2": "It's how you connect with your audience, establish your brand as a thought leader, and ultimately drive results.",
+				"subtitle3": "Our content creation services can help you:",
+				"smPoint1": "Develop a winning content strategy: ",
+				"smPoint1Description": "We'll work with you to understand your target audience and create a content calendar that aligns with your business goals.",
+				"smPoint2": "Craft high-quality content: ",
+				"smPoint2Description": " From informative blog posts and captivating videos to engaging social media content and persuasive email campaigns.",
+				"smPoint3": "Optimize your content for search engines: ",
+				"smPoint3Description": " We'll help your content rank higher in search results, driving organic traffic to your website.",
+				"smPoint4": "Measure and analyze content performance: ",
+				"smPoint4Description": "We'll track key metrics to understand what content resonates best and continuously refine your strategy for optimal results. ",
+				"stopStruggle": "Stop struggling to create fresh, engaging content.  Let our team of skilled content creators help you tell your brand story and achieve your marketing objectives."
+			},
+			"graphicDesign": {
+				"graphicDesign": "Graphic Design",
+				"subtitle1": "In a world overflowing with content, high-quality graphic design is essential to grab attention and tell your brand story.",
+				"subtitle2": "Our graphic design services can help you: ",
+				"smPoint1": "Develop a unique brand identity: ",
+				"smPoint1Description": "From logos and icons to website layouts and social media graphics, we'll create a cohesive visual style that reflects your brand personality.",
+				"smPoint2": "Elevate your online presence: ",
+				"smPoint2Description": "Eye-catching website graphics, engaging social media posts, we'll make your brand shine online.",
+				"smPoint3": "Increase brand awareness: ",
+				"smPoint3Description": " Our memorable visuals will leave a lasting impression on your audience.",
+				"stopStruggle": "Let our team of skilled graphic designers create visuals that captivate your audience and propel your brand forward. "
+			},
+			"paidAds": {
+				"paidAds": "Paid Ads",
+				"subtitle1": "Paid advertising allows you to strategically target potential customers across various platforms, maximizing your brand exposure.",
+				"subtitle2": "Our paid advertising expertise can help you: ",
+				"smPoint1": "Define your target audience: ",
+				"smPoint1Description": "We'll pinpoint the ideal customers for your brand, ensuring your ads reach the most relevant users.",
+				"smPoint2": "Craft compelling ad copy: ",
+				"smPoint2Description": "We'll create clear, concise, and persuasive messages that grab attention and encourage action.",
+				"smPoint3": "Optimize your campaigns: ",
+				"smPoint3Description": "We'll leverage data-driven strategies to refine your targeting, maximize your budget, and achieve optimal results.",
+				"smPoint4": "Track and analyze performance: ",
+				"smPoint4Description": "We'll provide detailed reports to measure the success.",
+				"stopWasting": "Stop wasting time and Let our team develop and manage paid ad campaigns that deliver real ROI."
+			},
+			"seo": {
+				"seo": "SEO",
+				"subtitle1": "Getting lost in search engine results?",
+				"subtitle2": "Strong SEO (Search Engine Optimization) is essential to drive organic traffic and reach your target audience.",
+				"subtitle3": "Our SEO expertise can help you: ",
+				"smPoint1": "Boost your website's ranking: ",
+				"smPoint1Description": "We'll implement strategies to improve your website's visibility in search engine results pages.",
+				"smPoint2": "Target the right keywords: ",
+				"smPoint2Description": " Identify relevant keywords your audience uses to find products or services like yours.",
+				"smPoint3": " Optimize your website content: ",
+				"smPoint3Description": "Craft compelling and informative content that search engines love and users crave.",
+				"smPoint4": "Build a strong backlink profile: ",
+				"smPoint4Description": "Earn high-quality links from reputable websites to enhance your authority and ranking.",
+				"stopWaiting": "Stop waiting for customers to find you. Let us help you climb the search ladder and achieve long-term organic growth."
+			},
+			"photography": {
+				"photography": "Photography",
+				"subtitle1": "Looking for stunning photographs that freeze time and evoke emotion?",
+				"subtitle2": "We specialize in crafting captivating imagery that goes beyond snapshots. Whether you're celebrating a milestone, building your brand, or simply want beautiful portraits, we'll capture the essence of your story in timeless photographs. ",
+				"subtitle3": "Here's what sets us apart: ",
+				"smPoint1": "Experienced and passionate photographers: ",
+				"smPoint1Description": "Our team brings a wealth of experience and artistic vision to every shoot.",
+				"smPoint2": "Personalized application roach: ",
+				"smPoint2Description": " We take the time to understand your unique needs and goals to create a customized photography experience.",
+				"smPoint3": "Attention to detail: ",
+				"smPoint3Description": "From lighting and composition to posing and editing, we ensure every detail is meticulously cared for.",
+				"smPoint4": "Stress-free experience: ",
+				"smPoint4Description": "from booking your session to receiving your final images.",
+				"ready": "Ready to create lasting memories?"
+			},
+			"videography": {
+				"videography": "Videography",
+				"subtitle1": "Video is the future of content, It grabs more attention. ",
+				"subtitle2": "Our videography services can help you: ",
+				"smPoint1": " Craft compelling video narratives: ",
+				"smPoint1Description": "We'll translate your brand story into engaging visuals that resonate with your audience.",
+				"smPoint2": "Produce high-quality videos: ",
+				"smPoint2Description": " From product demos and explainer videos to captivating social media content, we'll create videos that achieve your goals.",
+				"smPoint3": "Capture stunning visuals:",
+				"smPoint3Description": "Our experienced videographers will utilize their expertise to create professional and visually stunning videos.",
+				"goBeyond": "Go beyond static content, create captivating videos that tell your brand story.",
+				"letUs": "Let us handle this mission!"
+			},
+			"videoMotion": {
+				"videoMotion": "Video Motion",
+				"subtitle1": "Motion graphics add captivating movement and dynamism to your brand story. ",
+				"subtitle2": "Our motion graphics expertise can help you: ",
+				"smPoint1": "Transform ideas into captivating visuals: ",
+				"smPoint1Description": "Explainer videos, product demos, animated logos, and dynamic social media content.",
+				"smPoint2": "Enhance audience engagement: ",
+				"smPoint2Description": "Grab attention, simplify complex concepts, and leave a lasting impression with dynamic visuals.",
+				"smPoint3": "Boost brand storytelling: ",
+				"smPoint3Description": "Weave motion and animation into your brand narrative, adding depth and memorability.",
+				"letUs": "Let our motion graphics artists create captivating visuals that bring your brand story to life."
+			}
+		},
+		"software": {
+			"title": "Software Services",
+			"webDevelopment": {
+				"webDevelopment": "Web Development",
+				"subtitle1": "Build Powerful Web Applications to Enhance User Experience & Drive Results.",
+				"subtitle2": "We develop user-friendly and feature-rich web Applications that seamlessly integrate with your existing infrastructure.",
+				"subtitle3": "Our web Application development expertise can help you:",
+				"smPoint1": "Boost user engagement: ",
+				"smPoint1Description": "Create interactive experiences that keep users coming back for more.",
+				"smPoint2": "Simplify complex tasks: ",
+				"smPoint2Description": "Streamline workflows and processes with intuitive web Applications.",
+				"smPoint3": " Increase accessibility: ",
+				"smPoint3Description": "Deliver functionality accessible on any device, anywhere.",
+				"smPoint4": "Drive measurable results: ",
+				"smPoint4Description": "Integrate analytics to track user behavior and optimize your web Application for success.",
+				"letUs": "Let us build a custom web Application that solves your unique business challenges."
+			},
+			"mobileApplication": {
+				"mobileApplication": "Mobile Application",
+				"subtitle1": "Reach users everywhere with custom mobile Applications.",
+				"subtitle2": "We design and develop engaging mobile Applications that elevate your brand.",
+				"subtitle3": "Our mobile Application development expertise can help you:",
+				"smPoint1": "Enhance user experience: ",
+				"smPoint1Description": "Create user-friendly Applications that keep users engaged.",
+				"smPoint2": "Boost brand loyalty: ",
+				"smPoint2Description": "Offer exclusive features and foster deeper connections with your audience.",
+				"smPoint3": "Expand your reach: ",
+				"smPoint3Description": "Tap into the vast mobile user base and unlock new market opportunities.",
+				"smPoint4": "Drive measurable results:  ",
+				"smPoint4Description": "Track user behavior and Applications performance to optimize for success.",
+				"dont": "Don't just exist in a mobile world, thrive in it."
+			},
+			"desktopApplication": {
+				"mobileApplication": "Desktop Application",
+				"subtitle1": "Elevate your desktop experience with custom-built application locations.",
+				"subtitle2": "We develop powerful and user-friendly desktop applications that streamline workflows and unlock new levels of productivity.",
+				"subtitle3": "Our desktop Application development expertise can help you: ",
+				"smPoint1": "Automate repetitive tasks: ",
+				"smPoint1Description": "Free up valuable time by automating routine processes.",
+				"smPoint2": "Work offline seamlessly: ",
+				"smPoint2Description": "Access and utilize features even without an internet connection.",
+				"smPoint3": "Enhanced data security: ",
+				"smPoint3Description": "Maintain greater control over sensitive data stored locally.",
+				"smPoint4": "Deep system integration: ",
+				"smPoint4Description": " Leverage the full potential of your desktop hardware for optimal performance.",
+				"moveBeyond": "Move beyond browser limitations.",
+				"letUs": "Let us build a custom desktop application that perfectly integrates with your existing software and empowers you to achieve more."
+			},
+			"softwareQualityControl": {
+				"softwareQualityControl": "Software Quality Control",
+				"subtitle1": "In the competitive market, quality software is paramount.",
+				"subtitle2": "We ensure your software application locations meet the highest standards through meticulous quality control processes.",
+				"subtitle3": "Our software quality control expertise includes: ",
+				"smPoint1": "Functional Testing: ",
+				"smPoint1Description": "Verifying features work as intended across all platforms and scenarios.",
+				"smPoint2": "Non-Functional Testing: ",
+				"smPoint2Description": "Evaluating performance, usability, security, and compatibility.",
+				"smPoint3": "Automated Testing: ",
+				"smPoint3Description": "Implementing automated tests for efficient and consistent quality checks.",
+				"smPoint4": "Defect Management: ",
+				"smPoint4Description": ": Identifying, tracking, and resolving bugs effectively.",
+				"smPoint5": "Usability Testing:  ",
+				"smPoint5Description": " Ensuring your software is intuitive and user-friendly for all audiences.",
+				"weProvide": "We provide a comprehensive application roach to quality control, safeguarding your software's functionality, performance, and user experience"
+			}
+		},
+		"investment": {
+			"title": "Investment Services",
+			"financialConsulting": {
+				"financialConsulting": "Financial Consulting",
+				"subtitle1": "Our experienced consultants empower you with a personalized approach to reach your financial goals.",
+				"smPoint1": "Individuals: ",
+				"smPoint1Description": "Budgeting, saving, investing, debt management, risk mitigation.",
+				"smPoint2": "Businesses: ",
+				"smPoint2Description": "Optimized financial performance for stability and growth."
+			},
+			"stockMarket": {
+				"stockMarket": " Analyzing stock market data:",
+				"subtitle1": "Master the Market with Data-Driven Decisions.",
+				"subtitle2": "Our expertise unlocks market trends, analyzes risks, and provides deep company insights. Make informed investment decisions and optimize your portfolio with: ",
+				"smPoint1": "Market Trend Analysis",
+				"smPoint2": " Investment Risk Assessment",
+				"smPoint3": " In-depth Company Analysis ",
+				"smPoint4": "Accurate Valuation Models ",
+				"smPoint5": "Strategic Portfolio Optimization ",
+				"navigate": "Navigate the market with confidence."
+			},
 
-    }
-  }
+			"companies": {
+				"companies": "Analyzing companies' data",
+				"subtitle1": "Unleash hidden insights and fuel growth with our expert company data analysis. We help you:",
+				"smPoint1": "Spot market trends & predict customer behavior.",
+				"smPoint2": " Benchmark performances & identify areas for improvement.",
+				"smPoint3": " Optimize marketing with laser precision.",
+				"smPoint4": "Reduce costs & boost profitability.",
+				"smPoint5": "Drive innovation with data-backed insights.",
+				"turn": "Turn data into your competitive edge. "
+			}
+		}
+	},
+	"About": {
+		"title": "About Us",
+		"we": "We are trust agency team.",
+		"description": "Trust Agency is a business and marketing company that emerged from the future.",
+		"journey": "Our journey into business began in 2023. ",
+		"goal": "We resolved to take steady, defined measures towards our goal.",
+		"ourTeam": "Meet Our Team",
+		"ourVision": "Our Vision",
+		"vision": "We want to be a leading company in the field of marketing and business, and we want to create a base of customers who trust us and have loyalty to us.  We want to expand within Egypt and the Gulf and spread across a wide range.",
+		"ourMission": "Our Mission",
+		"mission": "Our major purpose is to assist businesses succeed by building initiatives and delivering full services that enable them to achieve remarkable results. In the first year, we hope to target the success of 20 clients in Egypt and 5 clients beyond Egypt.  Share our successes and collaborate to become one of our cherished customers who receive outstanding service."
+	},
+	"Globals": {
+		"close": "Close",
+		"languages": "Languages",
+		"learnMore": "Learn More"
+	},
+	"Contact": {
+		"title": "Contact Us"
+	},
+	"Footer": {
+		"follow": "Follow us on:",
+		"links": "Links:",
+		"copyrights": "Copyright @2024 | All rights reserved",
+		"together": "Together, We can create a Great future"
+	}
+}

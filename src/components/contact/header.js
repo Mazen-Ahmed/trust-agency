@@ -18,10 +18,18 @@ const ContactHeader = ({translation}) => {
                  <div className={`absolute w-20 h-4 top-4 ${locale==="ar"?"right-5":"left-5"} -z-10 `} style={{ background:"#fbc460", transform:"skew(-20deg, -15deg)"}} />
            </h1>
        </div>
-   <div className="flex flex-col gap-10 mx-10 mb-40 md:gap-40 md:flex-row lg:mx-36">
-   <div className="flex flex-col items-center self-center justify-center justify-self-center">
-        <Image  src="/logo-white.png" width={150} height={150} className="w-14 h-14 md:w-32 md:h-32 xl:w-56 xl:h-56"   alt="logo"/>
-        <h1 className="text-lg tracking-widest uppercase " style={{letterSpacing:9}}>Trust Agency</h1>
+   <div className="flex flex-col items-start justify-center gap-10 mx-10 mb-40 md:flex-row lg:mx-36">
+   <div className="flex flex-col items-start self-center justify-center flex-2 justify-self-center ">
+        <form>
+        <input 
+        className="w-full p-2 my-2 bg-transparent border border-gray-400 rounded-sm outline-none"
+        type="email"
+        placeholder="Email" />
+        <textarea   placeholder="Message"  className="w-full p-2 bg-transparent border border-gray-400 rounded-sm outline-none"/>
+        <button type="submit" className="px-10 py-3 mt-4 text-white border border-gray-500 bg-none">
+             Send Message
+        </button>
+        </form>
       </div>
 
      <div className="flex flex-col items-start justify-center flex-1" >
