@@ -5,7 +5,7 @@ import {unstable_setRequestLocale} from 'next-intl/server';
 const Investment = ({params}) => {
   unstable_setRequestLocale(params.locale)
 
-  const title=useTranslations("services.investment")
+  const title=useTranslations("Services.investment")
   const financialConsultingT=useTranslations("Services.investment.financialConsulting")
   const stockMarketT=useTranslations("Services.investment.stockMarket")
   const companiesT=useTranslations("Services.investment.companies")

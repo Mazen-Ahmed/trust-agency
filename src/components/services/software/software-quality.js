@@ -1,5 +1,22 @@
 import {Container} from "components"
-const SoftwareQuality = () => {
+const SoftwareQuality = ({translation}) => {
+  const{
+  softwareQualityControl,
+  subtitle1,
+  subtitle2,
+  subtitle3,
+  smPoint1,
+  smPoint1Description,
+  smPoint2,
+  smPoint2Description,
+  smPoint3,
+  smPoint3Description,
+  smPoint4,
+  smPoint4Description,
+  smPoint5,
+  smPoint5Description,
+  weProvide,
+  }=translation
   return (
     <Container 
     divOrder={1}
@@ -9,22 +26,22 @@ const SoftwareQuality = () => {
     <div className="py-4">
         <h1>
       <li  className="text-3xl " style={{listStyleType:"square"}}>
-      Software Quality
+      {softwareQualityControl}
         </li>
         </h1>
-        <p  className="my-6 text-gray-400 text-md" >
-        In a world overflowing with content, high-quality graphic design is essential to grab attention and tell your brand story.
-         </p>
+        <p  className="my-6 text-gray-400 text-md" > {subtitle1}  </p>
+        <p  className="my-6 text-gray-400 text-md" > {subtitle2}  </p>
         <div  className="my-3 text-gray-400 text-md" >
-          Our graphic design services can help you:
+          {subtitle3}
           <ul >
-            <li className="inline-block"> <span style={{color:"#FFC761"}}>- Develop a unique brand identity:</span> Identify your target audience, define your goals, and develop a content calendar that resonates.</li>
-            <li className="inline-block"> <span style={{color:"#FFC761"}}>- Elevate your online presence:</span>  Engaging posts, eye-catching visuals, and stories that capture attention and drive engagement.</li>
-            <li className="inline-block"> <span style={{color:"#FFC761"}}>-Increase brand awareness:</span> Stay active on all your platforms and build a strong online presence.</li>
+          <li className="inline-block"> <span style={{color:"#FFC761"}}>- {smPoint1}</span> {smPoint1Description}</li>
+            <li className="inline-block"> <span style={{color:"#FFC761"}}>- {smPoint2}</span>  {smPoint2Description}</li>
+            <li className="inline-block"> <span style={{color:"#FFC761"}}>- {smPoint3}</span> {smPoint3Description}</li>
+            <li className="inline-block"> <span style={{color:"#FFC761"}}>- {smPoint4}</span> {smPoint4Description}</li>
+            <li className="inline-block"> <span style={{color:"#FFC761"}}>- {smPoint5}</span> {smPoint5Description}</li>
           </ul>
            </div>
-        <p  className="my-6 text-gray-400 text-md" >
-        Let our team of skilled graphic designers create visuals that captivate your audience and propel your brand forward.         </p>
+        <p  className="my-6 text-gray-400 text-md" >{weProvide} </p>
   
     </div>
   </Container>  

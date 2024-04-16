@@ -260,6 +260,68 @@
 				"smPoint5": "Drive innovation with data-backed insights.",
 				"turn": "Turn data into your competitive edge. "
 			}
+		},
+		"legal": {
+			"title": "Legal Services",
+			"establishingCompanies": {
+				"establishingCompanies": "Establishing companies",
+				"subtitle1": "Do you dream of launching your own business?",
+				"subtitle2": "We are here to simplify the process of establishing your company in Egypt.",
+				"subtitle3": "What we offer you:",
+				"smPoint1": "Step-by-Step Guide: ",
+				"smPoint1Description": "Learn about the procedures required to set up your company with ease.",
+				"smPoint2": "Company Types: ",
+				"smPoint2Description": "Choose the most suitable structure for your business, from sole proprietorships to corporations.",
+				"smPoint3": "Legal Requirements: ",
+				"smPoint3Description": "Ensure you meet all the necessary requirements for legal operation.",
+				"start": "Start your entrepreneurial journey with us today!",
+				"contact": "Contact Us Now"
+			},
+			"providingLegalAdvice": {
+				"providingLegalAdvice": "Providing legal advice",
+				"subtitle1": "Navigating legal issues can be complex. At Trust Agency, we offer reliable and personalized legal advice to help you make informed decisions.",
+				"subtitle2": "Our Services:",
+				"smPoint1": "Expert Consultation: ",
+				"smPoint1Description": "Discuss your legal concerns with experienced attorneys specializing in various areas.",
+				"smPoint2": "Clear Communication: ",
+				"smPoint2Description": "We explain legal matters in a way that's easy to understand, ensuring you're fully informed.",
+				"smPoint3": "Tailored Solutions: ",
+				"smPoint3Description": "We develop strategies specific to your situation, aiming for the best possible outcome",
+				"dont": "Don't face legal challenges alone. Contact us today for a consultation."
+			}
+		},
+		"e-commerce": {
+			"title": "E-commerce services",
+			"expansion": {
+				"expansion": "Expansion of e-commerce in different countries",
+				"subtitle1": "E-commerce is exploding worldwide!",
+				"subtitle2": "This presents exciting opportunities for businesses to reach new customers and expand their reach.",
+				"subtitle3": "Here's a glimpse into the global e-commerce surge:",
+				"smPoint1": "Surging Sales: ",
+				"smPoint1Description": "Global e-commerce sales continue to soar, reaching new heights year after year.",
+				"smPoint2": "Mobile Powerhouse: ",
+				"smPoint2Description": "Mobile shopping continues to dominate, with users increasingly purchasing through smartphones and tablets.",
+				"smPoint3": "Shifting Preferences: ",
+				"smPoint3Description": "Consumer preferences are evolving, with a growing demand for convenience, personalized experiences, and secure online transactions.",
+				"ready": "Ready to tap into this global e-commerce boom? We can help you navigate the complexities of international e-commerce, from identifying high-potential markets to tailoring your strategy for local audiences."
+			},
+			"establishing": {
+				"establishing": "Establishing companies in other countries",
+				"subtitle1": "The world is your market.",
+				"subtitle2": "We help companies navigate the complexities of establishing a presence in new countries, unlocking global growth opportunities.",
+				"subtitle3": "Our expertise in international company establishment streamlines the process, including",
+				"smPoint1": "Market Research & Selection: ",
+				"smPoint1Description": "Identify the most suitable country for your business based on factors like regulations, competition, and market potential.",
+				"smPoint2": "Entity Selection: ",
+				"smPoint2Description": "Choose the optimal legal structure for your business, considering factors like  taxation, liability, and control.",
+				"smPoint3": "Company Registration & Compliance: ",
+				"smPoint3Description": "Handle all necessary paperwork and ensure your company adheres to local regulations.",
+				"smPoint4": "Banking & Finance: ",
+				"smPoint4Description": "Assist in opening bank accounts and navigating financial requirements.",
+				"smPoint5": "Post-Establishment Support: ",
+				"smPoint5Description": "Provide ongoing guidance on legal, tax, and operational matters.",
+				"dont": "Don't go it alone in the global marketplace. Our team of experts simplifies the process, allowing you to focus on growing your business internationally."
+			}
 		}
 	},
 	"About": {
