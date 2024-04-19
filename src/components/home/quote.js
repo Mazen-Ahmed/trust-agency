@@ -18,7 +18,7 @@ const Quote = ({translation}) => {
   }=useSlideElementAnimation(ref)
 
   return (
-  <div id="quot" ref={ref} className="relative flex flex-col pb-20 xl:gap:0 gap-28 xl:flex-row lg:min-h-screen" >
+  <div id="quot" ref={ref} className="relative flex flex-col pb-20 animated xl:gap:0 gap-28 xl:flex-row lg:min-h-screen" >
 
     <div 
       className="relative flex-1 w-full overflow-hidden "

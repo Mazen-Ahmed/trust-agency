@@ -16,7 +16,7 @@ const Container = ({
     const { element} =useFadeElementAnimation(ref)
     const { leftElement, rightElement} =useSlideElementAnimation(ref)
   return(
-    <div ref={ref}  className="flex flex-col min-h-screen gap-10 my-12 md:flex-row" style={{background:background&&background, ...fade&&element}}>
+    <div ref={ref}  className="flex flex-col min-h-screen gap-10 my-12 md:flex-row animated" style={{background:background&&background, ...fade&&element}}>
         <div
          className={`relative flex-1 ${imageOrder===2?"justify-end":"justify-start"} flex items-center  order-1 md:order-${imageOrder}`} 
         style={{...(!fade)&&(imageOrder===2?rightElement:leftElement)}}

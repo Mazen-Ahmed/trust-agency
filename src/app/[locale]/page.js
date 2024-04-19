@@ -1,8 +1,18 @@
 import { useTranslations } from "next-intl";
+import {Image} from "next/image"
+import {ImageResponse} from "next/og"
 import { Clients, Header, Quote,Services } from "components";
-import {unstable_setRequestLocale} from 'next-intl/server';
+import {unstable_setRequestLocale,getTranslations} from 'next-intl/server';
 
 
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('home.title'),
+    description: t('home.description'),
+  };
+}
 export default function Home({params}) {
   unstable_setRequestLocale(params.locale)
   const globalT=useTranslations("Globals")

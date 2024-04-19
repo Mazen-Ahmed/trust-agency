@@ -18,14 +18,14 @@ const ContactHeader = ({translation}) => {
                  <div className={`absolute w-20 h-4 top-4 ${locale==="ar"?"right-5":"left-5"} -z-10 `} style={{ background:"#fbc460", transform:"skew(-20deg, -15deg)"}} />
            </h1>
        </div>
-   <div className="flex flex-col items-start justify-center gap-10 mx-10 mb-40 md:flex-row lg:mx-36">
-   <div className="flex flex-col items-start self-center justify-center flex-2 justify-self-center ">
+   <div className="flex flex-col items-start justify-center gap-10 mx-10 mb-40 min-h-24 md:flex-row lg:mx-24">
+   <div className="flex flex-col items-start self-center justify-center flex-1 justify-self-center ">
         <form>
         <input 
-        className="w-full p-2 my-2 bg-transparent border border-gray-400 rounded-sm outline-none"
+        className="w-full px-2 py-5 my-2 bg-transparent border border-gray-400 rounded-sm outline-none"
         type="email"
         placeholder="Email" />
-        <textarea   placeholder="Message"  className="w-full p-2 bg-transparent border border-gray-400 rounded-sm outline-none"/>
+        <textarea   placeholder="Message"  rows={3} className="w-full p-2 bg-transparent border border-gray-400 rounded-sm outline-none"/>
         <button type="submit" className="px-10 py-3 mt-4 text-white border border-gray-500 bg-none">
              Send Message
         </button>
@@ -33,15 +33,15 @@ const ContactHeader = ({translation}) => {
       </div>
 
      <div className="flex flex-col items-start justify-center flex-1" >
-       <p className="flex items-center justify-start h-8 gap-2 my-2 text-white break-words md xs:20 md:text-2xl">
-       <MdOutlineLocationOn className="w-5 h-5"/>Cairo Office Address
+       <p className="flex items-center justify-start h-8 gap-2 my-2 text-white break-words md:text-md">
+       <MdOutlineLocationOn className="w-6 h-6"/>45 Kambez, Nadi Al Saeed, Dokki, <br/> Giza Governorate 12311
        </p>
-       <p className="flex items-center justify-start h-8 gap-2 my-2 text-white break-words md xs:20 md:text-2xl">
+       <p className="flex items-center justify-start h-8 gap-2 my-2 text-white break-words md:text-lg">
        <MdOutlineMarkEmailUnread className="w-5 h-5"/>trustagency.eg@gmail.com
        </p>
-       <p className="flex items-center justify-start h-8 gap-2 my-2 text-white break-words md xs:20 md:text-2xl">
+       <p className="flex items-center justify-start h-8 gap-2 my-2 text-white break-words md:text-lg">
        <FaPhoneVolume className="w-5 h-5"/> 
-       <span dir="ltr">+2 0111 234 5678</span>
+       <span dir="ltr">01103076238 | 0233365113</span>
        </p>
 
        <FollowIcons

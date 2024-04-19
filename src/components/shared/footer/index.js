@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image"
-import {Link,} from "navigation"
+import {Link, usePathname} from "navigation"
 import FollowIcons from "../follow-icons";
+import { scrollToSectionHandler } from "utils";
 
 const Footer = ({translation}) => {
+    const pathname=usePathname()
   return( 
   <footer className="bottom-0 w-full px-5 py-3 md:px-10 lg:px-20" style={{background:"#1f2023"}}>
     <div className="flex flex-col gap-10 lg:flex-row">
@@ -40,7 +43,11 @@ const Footer = ({translation}) => {
         <Link className="text-gray-400 " href={"/"}>
                 {translation.home}
             </Link>
-            <Link className="text-gray-400 " href={"/#services"}>
+            <Link 
+            className="text-gray-400 "
+            scroll={pathname!=="/"}
+            onClick={()=> pathname==="/"&&scrollToSectionHandler("services")}  
+            href={"/#services"}>
                 {translation.services}
             </Link>
             <Link className="text-gray-400 " href={"/about"}>

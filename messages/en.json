@@ -1,9 +1,15 @@
 {
+	"Metadata": {
+		"home": {
+			"title": "Home",
+			"description": "This is trust agency"
+		}
+	},
 	"Navbar": {
 		"home": "Home",
-		"services": "services",
-		"about": "About",
-		"contact": "Contact"
+		"services": "Services",
+		"about": "About Us",
+		"contact": "Contact Us"
 	},
 
 	"Home": {

@@ -16,7 +16,7 @@ const Services = ({translation}) => {
       rightElement
     }=useSlideElementAnimation(ref)
   return (
-    <div id="services" ref={ref} className="relative flex flex-col my-20 md:px-10 lg:px-20">
+    <div id="services" ref={ref} className="relative flex flex-col my-20 animated md:px-10 lg:px-20">
         <div className="flex flex-col items-center justify-center">
             <h1 className="text-sm text-gray-500 uppercase"> {translation.title}</h1>
             <h2 className="relative z-10 px-5 my-3 text-xl font-bold text-center md:text-2xl lg:text-5xl" >
@@ -52,9 +52,9 @@ const Services = ({translation}) => {
             </Link>
 
         </div>
-        <div style={{...rightElement}} className="grid grid-cols-1 gap-4 pb-10 mt-10 lg:grid-cols-2 legal">
+        <div style={{...rightElement}} className="grid grid-cols-1 gap-4 pb-10 mt-10 lg:grid-cols-2 ">
             <Link href={"/services/legal"}>
-            <div className="flex flex-col items-center justify-center gap-3 text-center"> 
+            <div className="flex flex-col items-center justify-center gap-3 text-center legal"> 
                 <Image  src={"/LS.png"} width={70} height={70} alt="digital marketing" />
                 <h1 className="text-lg font-bold lg">{translation.legal}</h1>
                 <p className="w-3/4 text-sm font-light text-gray-500">{translation.legalDescription}</p>

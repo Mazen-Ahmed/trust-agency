@@ -13,23 +13,26 @@ const Navbar = ({translation}) => {
 
     const pathname=usePathname()
 
-    const isActive=(link)=>!!(pathname===link)
+    const isActive=(link,includes=false)=>includes?pathname.includes(link):!!(pathname===link)
 
     const toggleOpenedHandler=()=>{
         setOpened(prev=>!prev)
     }
 
   return (
-  <nav style={{background:opened?"#000":"#17181c"}} className="text-white shadow-none sm:bg-black lg:bg-transparent">
+  <nav  className="text-white shadow-none sm:bg-black lg:bg-transparent">
     <div className="flex items-center justify-between h-16 px-5 lg:h-32 md:px-10 lg:px-20">  
     <Link
     href={"/"}
      className="text-lg tracking-widest uppercase md:text-xl line-clamp-6" 
     style={{letterSpacing:5}}
-    >Trust Agency</Link>
+    >
+        Trust Agency
+    </Link>
     <div className="items-center justify-between hidden gap-10 lg:flex ">
             <Link  
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/")&& "hover:text-yellow-400"}`}
+            onClick={toggleOpenedHandler}
             style={{
                 textShadow:isActive("/")&&"1px 2px 2px #fff",
                 fontWeight: isActive("/")&&"bold"
@@ -42,10 +45,14 @@ const Navbar = ({translation}) => {
             
             <Link  
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/#services")&& "hover:text-yellow-400"}`}
-            scroll={pathname==="/"&&false} onClick={()=> pathname==="/"&&scrollToSectionHandler("services")}  
+            scroll={pathname!=="/"}
+            onClick={()=> {
+                toggleOpenedHandler()
+                pathname==="/"&&scrollToSectionHandler("services")
+            }}  
             style={{
-                textShadow:isActive("/#services")&&"1px 2px 2px #fff",
-                fontWeight: isActive("/#services")&&"bold"
+                textShadow:isActive("/services",true)&&".5px .5px .5px #fff",
+                fontWeight: isActive("/services",true)&&"bold"
             }}
             href={"/#services"}
             >
@@ -59,6 +66,7 @@ const Navbar = ({translation}) => {
             textShadow: isActive("/about")&&"1px 2px 2px #fff",
             fontWeight: isActive("/about")&&"bold"
             }}
+            onClick={toggleOpenedHandler}
             href={"/about"}
             >
                 <FaCircleInfo className="w-5 h-5"/>
@@ -87,19 +95,38 @@ const Navbar = ({translation}) => {
     </button> 
     </div>
     <div className={`flex lg:hidden flex-col items-start justify-start ease-out duration-100 gap-10 px-5  ${opened?"max-h-96 py-4 border-t border-white":"overflow-hidden max-h-0"}    md:px-10 lg:px-20`}>
-            <Link className="flex items-center justify-center gap-2 text-lg" href={"/"}>
+            <Link 
+            className="flex items-center justify-center gap-2 text-lg" 
+            href={"/"}
+            onClick={toggleOpenedHandler}
+            >
               <BiHome className="w-5 h-5"/>
                 Home
             </Link>
-            <Link className="flex items-center justify-center gap-2 text-lg" scroll={false} onClick={()=>scrollToSectionHandler("services")}  href={"/#services"}>
+            <Link 
+            className="flex items-center justify-center gap-2 text-lg"
+            scroll={false}
+            onClick={()=>{
+                toggleOpenedHandler()
+                scrollToSectionHandler("services")
+            }}
+            href={"/#services"}>
                 <MdOutlineHomeRepairService className="w-5 h-5"/>
                 {translation.services}
             </Link>
-            <Link className="flex items-center justify-center gap-2 text-lg"  href={"/about"}>
+            <Link 
+            className="flex items-center justify-center gap-2 text-lg"
+            href={"/about"}
+            onClick={toggleOpenedHandler}
+            >
                 <FaCircleInfo className="w-5 h-5"/>
                  About us
             </Link>
-            <Link className="flex items-center justify-center gap-2 text-lg" href={"/contact"}>
+            <Link 
+            className="flex items-center justify-center gap-2 text-lg"
+            href={"/contact"}
+            onClick={toggleOpenedHandler}
+            >
                 <RiContactsBookLine className="w-5 h-5"/>
                 Contact us
             </Link>

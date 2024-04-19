@@ -15,9 +15,9 @@ const CustomCarousel = ({ slidesPerView = 3, data }) => {
 
 	return (
 		<section className="py-2 md:px-10 lg:px-20 ">
-			<div className="container rounded-md py-2 px-5 flex flex-col justify-center min-h-96 "
-       style={{        backgroundImage:"  linear-gradient(to bottom right,#160934,#331a6d)"  }}>
-				<h1 className="self-center mb-7 text-2xl font-bold">Our Team</h1>
+			<div
+				className="container flex flex-col justify-center px-5 py-2 rounded-md min-h-96 "
+       			style={{backgroundImage:"  linear-gradient(to bottom right,rgba(47, 54, 64,1.0),rgba(47, 54, 64,0.5))"  }}>
 
 				<div className="relative z-0">
 					<Swiper
@@ -49,7 +49,7 @@ const CustomCarousel = ({ slidesPerView = 3, data }) => {
 										className="block w-full h-full"
 										/>
 								</div>
-									<h1 className="text-lg  font-semibold">
+									<h1 className="text-lg font-semibold">
 										{item.name}
 									</h1>
 									<h2 className="text-sm">{item.role}</h2>

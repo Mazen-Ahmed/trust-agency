@@ -1,4 +1,10 @@
 {
+	"Metadata": {
+		"home": {
+			"title": "الصفحة الرئيسية",
+			"description": "تراست ايجنسي"
+		}
+	},
 	"Navbar": {
 		"home": "الصفحة الرئيسية",
 		"services": "خدماتنا",

@@ -6,13 +6,15 @@ const useSlideElementAnimation = (ref) => {
   const isInView=useInView(ref,{once:true})
 
   const rightElement = {
-    transform: isInView ? "translateX(0)" : "translateX(100%)",
-    transition: "1s",
+    transform: isInView ? "translateX(0)" : "translateX(100vw)", 
+    opacity: isInView ? 1 : 0,
+    transition: "transform 1s, opacity 1s",
   };
 
   const leftElement = {
-    transform: isInView ? "translateX(0)" : "translateX(-100%)",
-    transition: "1s",
+    transform: isInView ? "translateX(0)" : "translateX(-100vw)",
+    opacity: isInView ? 1 : 0,
+    transition: "transform 1s, opacity 1s",
   };
 
   return {
