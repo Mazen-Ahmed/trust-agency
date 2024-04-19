@@ -14,8 +14,7 @@ const useSlideElementAnimation = (ref) => {
   const leftElement = {
     transform: isInView ? "translateX(0)" : "translateX(-100vw)",
     opacity: isInView ? 1 : 0,
-    display: isInView ? "block" : "none",
-    transition: "transform 1s, opacity 1s,display 0.2s",
+    transition: "transform 1s, opacity 1s",
   };
 
   return {
