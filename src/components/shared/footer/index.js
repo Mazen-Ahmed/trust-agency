@@ -7,7 +7,7 @@ import { scrollToSectionHandler } from "utils";
 const Footer = ({translation}) => {
     const pathname=usePathname()
   return( 
-  <footer className="bottom-0 w-full px-5 py-3 md:px-10 lg:px-20" style={{background:"#1f2023"}}>
+  <footer className="relative bottom-0 z-40 w-full px-5 py-3 md:px-10 lg:px-20" style={{background:"#1f2023"}}>
     <div className="flex flex-col gap-10 lg:flex-row">
         <div className="flex flex-col items-center justify-center flex-1 ">
             <Image 

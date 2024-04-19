@@ -20,7 +20,7 @@ const Navbar = ({translation}) => {
     }
 
   return (
-  <nav  className="text-white shadow-none sm:bg-black lg:bg-transparent">
+  <nav  className={`text-white shadow-none ${opened&&"sm:bg-black"} lg:bg-transparent`}>
     <div className="flex items-center justify-between h-16 px-5 lg:h-32 md:px-10 lg:px-20">  
     <Link
     href={"/"}
@@ -44,7 +44,7 @@ const Navbar = ({translation}) => {
             </Link>
             
             <Link  
-            className={`flex items-center justify-center gap-2 text-lg ${!isActive("/#services")&& "hover:text-yellow-400"}`}
+            className={`flex items-center justify-center gap-2 text-lg ${!isActive("/services",true)&& "hover:text-yellow-400"}`}
             scroll={pathname!=="/"}
             onClick={()=> {
                 toggleOpenedHandler()
@@ -101,7 +101,7 @@ const Navbar = ({translation}) => {
             onClick={toggleOpenedHandler}
             >
               <BiHome className="w-5 h-5"/>
-                Home
+              {translation.home}
             </Link>
             <Link 
             className="flex items-center justify-center gap-2 text-lg"
@@ -120,7 +120,7 @@ const Navbar = ({translation}) => {
             onClick={toggleOpenedHandler}
             >
                 <FaCircleInfo className="w-5 h-5"/>
-                 About us
+                {translation.about}
             </Link>
             <Link 
             className="flex items-center justify-center gap-2 text-lg"
@@ -128,7 +128,7 @@ const Navbar = ({translation}) => {
             onClick={toggleOpenedHandler}
             >
                 <RiContactsBookLine className="w-5 h-5"/>
-                Contact us
+                {translation.contact}
             </Link>
             <LocalSwitcher translation={{languages:translation.languages,close:translation.close}}/>
     </div>

@@ -228,7 +228,7 @@
 				"smPoint3": "Automated Testing: ",
 				"smPoint3Description": "Implementing automated tests for efficient and consistent quality checks.",
 				"smPoint4": "Defect Management: ",
-				"smPoint4Description": ": Identifying, tracking, and resolving bugs effectively.",
+				"smPoint4Description": "Identifying, tracking, and resolving bugs effectively.",
 				"smPoint5": "Usability Testing:  ",
 				"smPoint5Description": " Ensuring your software is intuitive and user-friendly for all audiences.",
 				"weProvide": "We provide a comprehensive application roach to quality control, safeguarding your software's functionality, performance, and user experience"
@@ -348,7 +348,12 @@
 		"learnMore": "Learn More"
 	},
 	"Contact": {
-		"title": "Contact Us"
+		"title": "Contact Us",
+		"name": "Name",
+		"phone": "Phone",
+		"email": "Email",
+		"message": "Message",
+		"sendMessage": "Send Message"
 	},
 	"Footer": {
 		"follow": "Follow us on:",

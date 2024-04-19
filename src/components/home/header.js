@@ -40,7 +40,7 @@ const Header = ({translation}) => {
       <Blob height={300} width={100} position={{...locale==="ar"?{right:0}:{left:0},top:"20%"}}/>
       </motion.div>
     <div dir="ltr" className="flex justify-center leading-none md:justify-start align-start">
-      <h1 className="heading trust" style={{       backgroundImage:`url("${trustImages[currentIndex]}")` }}>
+      <h1 className="heading trust" style={{ backgroundImage:`url("${trustImages[currentIndex]}")` }}>
         Trust-  
       </h1>
       <div dir="ltr" className="flex-col items-center self-center justify-center hidden md:flex ">
@@ -48,13 +48,13 @@ const Header = ({translation}) => {
         <h1 className="text-xs tracking-widest uppercase md:text-sm" style={{letterSpacing:1}}>Trust Agency</h1>
       </div>
     </div>
-    <div dir="ltr"  className="flex flex-col justify-end leading-none align-start md:flex-row ">
-      <div className="flex items-center self-center justify-center order-2 md:order-1 ">
-        <p className="w-full h-8 my-10 font-bold text-gray-500 break-words text-md md:w-3/4 md:text-xl">
+    <div dir="ltr"  className="flex flex-col justify-end leading-none align-start lg:flex-row ">
+      <div className="flex items-center self-center justify-center order-2 lg:order-1 ">
+        <p className="w-full h-8 my-10 font-bold text-gray-500 break-words text-md md:w-3/4 md:text-lg">
           {translation.together}
         </p>
       </div>
-      <h1 className="self-center order-1 agency heading md:order-2" style={{backgroundImage:`url("${agencyImages[currentIndex]}")`}} >
+      <h1 className="self-center order-1 agency heading lg:order-2" style={{backgroundImage:`url("${agencyImages[currentIndex]}")`}} >
        Agency
       </h1>
     </div>

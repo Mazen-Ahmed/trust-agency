@@ -30,8 +30,8 @@ const LocalSwitcher = ({translation}) => {
             {locale==="en"&&<IoMdCheckmark/>}
                 English
             </p>
-            <p onClick={()=>switchLanguageHandler("rs")} className={`flex items-center gap-2 p-2 duration-150 ease-out rounded-md shadow-md cursor-pointer hover:text-blue-500 ${locale==="rs"&&"text-blue-500"}`}>
-            {locale==="rs"&& <IoMdCheckmark/>}
+            <p onClick={()=>switchLanguageHandler("ru")} className={`flex items-center gap-2 p-2 duration-150 ease-out rounded-md shadow-md cursor-pointer hover:text-blue-500 ${locale==="ru"&&"text-blue-500"}`}>
+            {locale==="ru"&& <IoMdCheckmark/>}
                 Russian
             </p>
         </div>,
@@ -42,7 +42,7 @@ const LocalSwitcher = ({translation}) => {
     
   return(
     <>
-        <div onClick={()=>setModalOpened(true)} className="flex items-center justify-center w-8 h-8 p-2 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer">
+        <div onClick={()=>setModalOpened(true)} className="flex items-center justify-center w-8 h-8 p-2 text-black uppercase bg-white border-2 border-gray-200 rounded-full cursor-pointer">
             {locale}
         </div>
 

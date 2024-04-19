@@ -53,13 +53,13 @@ body {
 .trust {
 	-webkit-filter: drop-shadow(2px 30px #fff);
 	filter: drop-shadow(0px 2px rgba(236, 240, 241, 1));
-	text-shadow: 0px 0px 30px rgba(236, 240, 241, 0.2);
+	text-shadow: 0px 0px 10px rgba(236, 240, 241, 0.2);
 }
 
 .agency {
 	-webkit-filter: drop-shadow(2px 30px #c78544);
 	filter: drop-shadow(0px 2px #c78544);
-	text-shadow: 0px 0px 30px rgb(199, 133, 68, 0.2);
+	text-shadow: 0px 0px 10px rgb(199, 133, 68, 0.2);
 }
 
 .underline-word {

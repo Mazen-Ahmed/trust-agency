@@ -18,10 +18,11 @@ const Quote = ({translation}) => {
   }=useSlideElementAnimation(ref)
 
   return (
-  <div id="quot" ref={ref} className="relative flex flex-col pb-20 animated xl:gap:0 gap-28 xl:flex-row lg:min-h-screen" >
+  <div id="quot" ref={ref} className="relative flex flex-col pb-20 animated xl:gap:0 gap-28 lg:flex-row lg:min-h-screen" >
+
 
     <div 
-      className="relative flex-1 w-full overflow-hidden "
+      className="relative flex-1 hidden w-full overflow-hidden md:flex "
       style={{ ...leftElement}}
     >
         <Image src="/quote.png" fill  alt='img' className=" w-36 h-36 md:w-3/4 md:h-3/4" />

@@ -9,10 +9,10 @@ const Clients = ({translation}) => {
   return (
 <div ref={ref} className="px-5 pb-24 mt-10 mb-10" style={{ background:"url('/clients.png')"}}>
   <div className="flex flex-col justify-start gap-10 my-10 lg:items-center lg:flex-row md:px-10 lg:px-20">
-    <h1 style={{...element}} className="flex flex-1 text-2xl md:mx-24 underline-word underline-offset-4">
+    <h1 style={{...element}} className="flex w-40 text-2xl flex-2 md:mx-20 underline-word underline-offset-4">
        {translation.title}
     </h1>
-    <p style={{...element}} className="flex justify-center flex-1 text-sm text-gray-500 md:text-md ">
+    <p style={{...element}} className="flex justify-center text-sm text-gray-500 flex-3 md:text-md ">
     {translation.description}
     </p>
   </div>
