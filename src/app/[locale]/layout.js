@@ -10,7 +10,15 @@ const poppins = Poppins({weight:"400", subsets: ["latin"] });
 const tajawal = Tajawal({weight:"400", subsets: ["arabic"] });
 
 
-
+export const metadata = {
+  title: {
+    default:"Trust Agency",
+    template:"%s | Trust Agency",
+    twitter:{
+      card:"summary_large_image"
+    }
+  },
+};
 
 export default function RootLayout({ children,params }) {
   
