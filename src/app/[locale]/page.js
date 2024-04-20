@@ -1,6 +1,4 @@
 import { useTranslations } from "next-intl";
-import {Image} from "next/image"
-import {ImageResponse} from "next/og"
 import { Clients, Header, Quote,Services } from "components";
 import {unstable_setRequestLocale,getTranslations} from 'next-intl/server';
 

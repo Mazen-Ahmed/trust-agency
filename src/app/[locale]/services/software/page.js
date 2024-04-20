@@ -1,6 +1,17 @@
 import { DesktopApp, MobileApplications, SoftwareHeader, SoftwareQuality } from "components";
 import { useTranslations } from "next-intl";
-import {unstable_setRequestLocale} from 'next-intl/server';
+import {unstable_setRequestLocale,getTranslations} from 'next-intl/server';
+
+
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('services.software.title'),
+    description: t('services.software.description'),
+  };
+}
+
 
 const Software = ({params}) => {
   unstable_setRequestLocale(params.locale)

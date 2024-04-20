@@ -9,8 +9,19 @@ import {
     SocialMediaManagement,
     Videography
   } from "components";
-  import {unstable_setRequestLocale} from 'next-intl/server';
+  import {unstable_setRequestLocale,getTranslations} from 'next-intl/server';
 import { useTranslations } from "next-intl";
+
+
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('services.digitalMarketing.title'),
+    description: t('services.digitalMarketing.description'),
+  };
+}
+
 const DigitalMarketing = ({params}) => {
   unstable_setRequestLocale(params.locale)
 

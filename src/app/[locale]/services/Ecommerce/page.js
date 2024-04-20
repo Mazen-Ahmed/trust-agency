@@ -1,7 +1,16 @@
 import {Establish,  EcommerceHeader} from "components"
 import { useTranslations } from "next-intl";
-import {unstable_setRequestLocale} from 'next-intl/server';
+import {unstable_setRequestLocale,getTranslations} from 'next-intl/server';
 
+
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('services.e-commerce.title'),
+    description: t('services.e-commerce.description'),
+  };
+}
 const ECommerce = ({params}) => {
   unstable_setRequestLocale(params.locale)
   const title=useTranslations("Services.e-commerce")

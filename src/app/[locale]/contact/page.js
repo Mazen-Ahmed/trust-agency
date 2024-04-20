@@ -3,7 +3,13 @@ export const dynamic = 'force-dynamic'
 import { ContactHeader } from "components";
 import { useTranslations } from "next-intl";
 
-
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('contact.title'),
+  };
+}
 const ContactUs = () => {
   const contactT=useTranslations("Contact")
   const footerT=useTranslations("Footer")

@@ -2,7 +2,35 @@
 	"Metadata": {
 		"home": {
 			"title": "Home",
-			"description": "This is trust agency"
+			"description": "Trust Agency is a dynamic business and marketing firm that has revolutionized the industry by emerging from the future. With cutting-edge technology and visionary leadership, Trust Agency is committed to delivering innovative solutions that help businesses thrive in today's fast-paced world. Trust us to take your business to the next level!"
+		},
+		"about": {
+			"title": "About Us"
+		},
+		"contact": {
+			"title": "Contact Us"
+		},
+		"services": {
+			"digitalMarketing": {
+				"title": "Digital Marketing Services",
+				"description": "In today's competitive market, a strong brand is your secret weapon.  It's more than just a logo; it's the story, the feeling, and the promise that sets you apart"
+			},
+			"software": {
+				"title": "Software Services",
+				"description": "Build Powerful Web Applications to Enhance User Experience & Drive Results."
+			},
+			"investment": {
+				"title": "Investment Services",
+				"description": "Our experienced consultants empower you with a personalized approach to reach your financial goals."
+			},
+			"legal": {
+				"title": "Legal Services",
+				"description": "We are here to simplify the process of establishing your company in Egypt."
+			},
+			"e-commerce": {
+				"title": "E-commerce services",
+				"description": " Ready to tap into this global e-commerce boom? We can help you navigate the complexities of international e-commerce, from identifying high-potential markets to tailoring your strategy for local audiences."
+			}
 		}
 	},
 	"Navbar": {

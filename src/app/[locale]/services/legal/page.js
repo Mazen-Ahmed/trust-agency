@@ -1,6 +1,16 @@
 import {ProvideLegal, LegalHeader,} from "components"
 import { useTranslations } from "next-intl";
-import {unstable_setRequestLocale} from 'next-intl/server';
+import {unstable_setRequestLocale,getTranslations} from 'next-intl/server';
+
+
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('services.legal.title'),
+    description: t('services.legal.description'),
+  };
+}
 
 const Legal = ({params}) => {
   unstable_setRequestLocale(params.locale)

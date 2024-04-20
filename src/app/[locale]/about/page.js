@@ -1,6 +1,16 @@
 export const dynamic = 'force-dynamic'
 import { AboutHeader, Mission, OurTeam, Vision } from "components";
 import { useTranslations } from "next-intl";
+import {getTranslations} from 'next-intl/server';
+
+
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+ 
+  return {
+    title: t('about.title'),
+  };
+}
 const About = () => {
   const aboutT=useTranslations("About")
 
