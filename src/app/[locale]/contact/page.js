@@ -8,6 +8,11 @@ export async function generateMetadata({params: {locale}}) {
  
   return {
     title: t('contact.title'),
+    openGraph:{
+      title: t('contact.title'),
+      description: t('home.description'),
+      images:["/logo-white.png"]
+    },
   };
 }
 const ContactUs = () => {

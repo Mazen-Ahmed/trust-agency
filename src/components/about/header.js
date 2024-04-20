@@ -12,7 +12,7 @@ const AboutHeader = ({translation}) => {
     <motion.header initial={{y:100,opacity:0}} animate={{y:0,opacity:1}} className="relative flex flex-col min-h-screen py-3 lg:h-32 md:px-10 lg:px-20"
      style={{minHeight:600,}}
      >
-            <Blob height={300} position={{right:"40%",top:"20%"}}/>
+            <Blob height={300} position={{right:"40%",top:"20%",zIndex:"-1"}}/>
 
         <div className="w-full mb-16 ">
             <h1  className="flex flex-1 mx-10 text-4xl font-bold uppercase lg:mx-40 underline-word shorter">

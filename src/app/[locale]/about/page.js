@@ -9,6 +9,11 @@ export async function generateMetadata({params: {locale}}) {
  
   return {
     title: t('about.title'),
+    openGraph:{
+      title: t('about.title'),
+      description: t('home.description'),
+      images:["/logo-white.png"]
+    },
   };
 }
 const About = () => {

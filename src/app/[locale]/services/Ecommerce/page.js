@@ -9,6 +9,11 @@ export async function generateMetadata({params: {locale}}) {
   return {
     title: t('services.e-commerce.title'),
     description: t('services.e-commerce.description'),
+    openGraph:{
+      title: t('services.e-commerce.title'),
+      description: t('services.e-commerce.description'),
+      images:["/expansion.png"]
+    },
   };
 }
 const ECommerce = ({params}) => {
