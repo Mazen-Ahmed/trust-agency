@@ -12,7 +12,6 @@ export async function generateMetadata({params: {locale}}) {
     openGraph:{
       title: t('services.legal.title'),
       description: t('services.legal.description'),
-      images:["/establishing.png"]
     },
   };
 }

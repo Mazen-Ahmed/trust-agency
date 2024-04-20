@@ -1,5 +1,5 @@
 export const dynamic = 'force-dynamic'
-
+import {getTranslations} from 'next-intl/server';
 import { ContactHeader } from "components";
 import { useTranslations } from "next-intl";
 
@@ -11,7 +11,6 @@ export async function generateMetadata({params: {locale}}) {
     openGraph:{
       title: t('contact.title'),
       description: t('home.description'),
-      images:["/logo-white.png"]
     },
   };
 }
