@@ -2,11 +2,21 @@ import {MetadataRoute} from 'next';
  
 // Can be imported from shared config
 const defaultLocale = 'en' ;
-const locales = ['en', 'ar'] ;
+const locales = ['en', 'ar','ru'] ;
  
 // Adapt this as necessary
-const pathnames = ['/',"/contact", '/about',"/services"];
-const host = 'https://trust-agency.netlify.app';
+const pathnames = [
+  '/',
+  "/contact",
+  '/about',
+  "/services/digital-marketing",
+  "/services/investment",
+  "/services/legal",
+  "/services/software",
+  "/services/Ecommerce",
+];
+
+const host = "https://trust-agency.netlify.app"
  
 export default function sitemap() {
   function getUrl(pathname, locale) {

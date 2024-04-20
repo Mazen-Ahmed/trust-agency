@@ -64,7 +64,7 @@ export default function RootLayout({ children,params }) {
   );
 }
 
-const locales = ['en', 'ar'];
+const locales = ['en', 'ar',"ru"];
  
 export function generateStaticParams() {
   return locales.map((locale) => ({locale}));
