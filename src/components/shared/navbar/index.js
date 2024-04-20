@@ -32,7 +32,6 @@ const Navbar = ({translation}) => {
     <div className="items-center justify-between hidden gap-10 lg:flex ">
             <Link  
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/")&& "hover:text-yellow-400"}`}
-            onClick={toggleOpenedHandler}
             style={{
                 textShadow:isActive("/")&&"1px 2px 2px #fff",
                 fontWeight: isActive("/")&&"bold"
@@ -47,7 +46,6 @@ const Navbar = ({translation}) => {
             className={`flex items-center justify-center gap-2 text-lg ${!isActive("/services",true)&& "hover:text-yellow-400"}`}
             scroll={pathname!=="/"}
             onClick={()=> {
-                toggleOpenedHandler()
                 pathname==="/"&&scrollToSectionHandler("services")
             }}  
             style={{
@@ -66,7 +64,6 @@ const Navbar = ({translation}) => {
             textShadow: isActive("/about")&&"1px 2px 2px #fff",
             fontWeight: isActive("/about")&&"bold"
             }}
-            onClick={toggleOpenedHandler}
             href={"/about"}
             >
                 <FaCircleInfo className="w-5 h-5"/>
