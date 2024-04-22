@@ -6,4 +6,6 @@ export const sendMail = async (data) =>
   }).then((res) => {
     if (!res.ok) throw new Error("Failed to send message");
     return res.json();
-  });
+  }).catch(err=>{
+    return err
+  })

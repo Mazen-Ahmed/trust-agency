@@ -115,7 +115,7 @@ const OurTeam = ({translation}) => {
             quote:description11
         },
         {
-            img:"/Mohammed Kamel.jpg",
+            img:"/Mohammed Kamel.JPG",
             name:name12,
             role:role12,
             quote:description12

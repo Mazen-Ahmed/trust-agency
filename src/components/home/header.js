@@ -58,7 +58,7 @@ const Header = ({translation}) => {
           {translation.together}
         </p>
       </div>
-      <h1 className="self-center order-1 agency heading lg:order-2" style={{
+      <h1 className="self-center order-1 agency heading lg:order-2 " style={{
         backgroundImage:`url("${agencyImages[currentIndex]}")`,
         fontFamily: "'Poppins', sans-serif  !important",
         fontWeight:600,
@@ -67,7 +67,7 @@ const Header = ({translation}) => {
        Agency
       </h1>
     </div>
-    <Arrow/>
+    <Arrow />
     </header>
   )
 };

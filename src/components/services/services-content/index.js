@@ -21,10 +21,9 @@ const Container = ({
     return(
     <div ref={ref}  className="flex flex-col min-h-screen gap-10 my-12 md:flex-row animated" style={{background:background&&background, ...fade&&element}}>
         <div
-         className={`relative flex-1 ${imageOrder===2?"justify-end":"justify-start"} flex items-center`} 
+         className={`relative flex-1 ${imageOrder===2?"justify-end":"justify-start"} flex items-center ${imageOrder===2 && "md:order-2"}`} 
         style={{
             ...(!fade)&&(imageOrder===2?rightElement:leftElement),
-            order:imageOrder||1
         }}
       >
             <div 
@@ -42,11 +41,9 @@ const Container = ({
             </div>
         </div>
         <div
-         className={` px-5 flex-1  md:px-10 lg:px-20 flex justify-start`}
+         className={` px-5 flex-1  md:px-10 lg:px-20 flex justify-start ${divOrder===1&&"md:order-1"}`}
          style={{
             ...(!fade)&&(imageOrder===2?leftElement:rightElement),
-            order:divOrder||2
-
         }}
          >
             {children}

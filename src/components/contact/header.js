@@ -6,7 +6,6 @@ import {useLocale} from "next-intl"
 import {motion} from "framer-motion"
 import { useState } from "react";
 import { sendMail } from "services";
-import { validateEmail,validatePhone } from "utils";
 const ContactHeader = ({translation}) => {
   const [values, setValues]=useState({})
 
