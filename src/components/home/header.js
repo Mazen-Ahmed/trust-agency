@@ -40,12 +40,16 @@ const Header = ({translation}) => {
       <Blob height={300} width={100} position={{...locale==="ar"?{right:0}:{left:0},top:"20%"}}/>
       </motion.div>
     <div dir="ltr" className="flex justify-center leading-none md:justify-start align-start">
-      <h1 className="heading trust" style={{ backgroundImage:`url("${trustImages[currentIndex]}")` }}>
+      <h1 className="heading trust" style={{ 
+        backgroundImage:`url("${trustImages[currentIndex]}")`,
+        fontFamily: "'Poppins', sans-serif !important ",
+        fontWeight:600,
+        fontStyle: "normal"
+    }}>
         Trust-  
       </h1>
       <div dir="ltr" className="flex-col items-center self-center justify-center hidden md:flex ">
-        <Image  src="/logo-white.png" width={110} height={110}  className="object-cover h-full mx-8"   alt="logo"/>
-        <h1 className="text-xs tracking-widest uppercase md:text-sm" style={{letterSpacing:1}}>Trust Agency</h1>
+        <Image  src="/logo-text.png" width={130} height={130}  className="object-cover h-full mx-8"   alt="logo"/>
       </div>
     </div>
     <div dir="ltr"  className="flex flex-col justify-end leading-none align-start lg:flex-row ">
@@ -54,7 +58,12 @@ const Header = ({translation}) => {
           {translation.together}
         </p>
       </div>
-      <h1 className="self-center order-1 agency heading lg:order-2" style={{backgroundImage:`url("${agencyImages[currentIndex]}")`}} >
+      <h1 className="self-center order-1 agency heading lg:order-2" style={{
+        backgroundImage:`url("${agencyImages[currentIndex]}")`,
+        fontFamily: "'Poppins', sans-serif  !important",
+        fontWeight:600,
+        fontStyle: "normal"
+        }} >
        Agency
       </h1>
     </div>

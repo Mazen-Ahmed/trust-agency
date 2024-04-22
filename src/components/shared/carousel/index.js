@@ -40,13 +40,13 @@ const CustomCarousel = ({ slidesPerView = 3, data }) => {
 										{item.quote}
 									</div>
 
-								<div className="w-32 h-32">
+								<div className="h-44 w-44">
 									<Image
 										src={item.img}
 										alt="member"
-										width={100}
-										height={100}
-										className="block w-full h-full"
+										width={150}
+										height={150}
+										className="block object-cover object-top w-full h-full rounded-full"
 										/>
 								</div>
 									<h1 className="text-lg font-semibold">

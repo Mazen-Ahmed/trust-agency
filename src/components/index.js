@@ -37,6 +37,8 @@ import ProvideLegal from "./services/legal/provide-legal";
 import LegalHeader from "./services/legal/header";
 import Establish from "./services/ecommerce/establish";
 import EcommerceHeader from "./services/ecommerce/header";
+import SAP from "./services/software/sap";
+import POS from "./services/software/pos";
 
 export {
     Navbar,
@@ -76,6 +78,8 @@ export {
     InvestmentHeader,
     StockMarket,
     ProvideLegal,
-LegalHeader,
-    SoftwareQuality
+    LegalHeader,
+    SoftwareQuality,
+    SAP,
+    POS
 }

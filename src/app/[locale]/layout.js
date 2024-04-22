@@ -31,11 +31,7 @@ export default function RootLayout({ children,params }) {
   const footerT=useTranslations("Footer")
   
   return (
-    <html dir={params.locale==="ar"?"rtl":"ltr"} lang={params.locale} style={{ 
-      fontFamily: "'Poppins', sans-serif",
-    fontWeight: 300,
-    fontStyle: "normal"
-    }}>
+    <html dir={params.locale==="ar"?"rtl":"ltr"} lang={params.locale} >
       <body className={params.locale==="ar"?tajawal.className:poppins.className}>
 
         <Navbar 

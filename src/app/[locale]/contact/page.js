@@ -17,6 +17,7 @@ export async function generateMetadata({params: {locale}}) {
 const ContactUs = () => {
   const contactT=useTranslations("Contact")
   const footerT=useTranslations("Footer")
+  const validationT=useTranslations("validation")
   return   <ContactHeader translation={{  
     name:contactT("name"),
     email:contactT("email"),
@@ -24,7 +25,10 @@ const ContactUs = () => {
     phone:contactT("phone"),
     message:contactT("message"),
     sendMessage:contactT("sendMessage"),
-    follow:footerT("follow")
+    follow:footerT("follow"),
+    invalid:validationT("invalid"),
+    thanks:validationT("thanks"),
+    messageNotSent:validationT("messageNotSent"),
   }}/>
 };
 

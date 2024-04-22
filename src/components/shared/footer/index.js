@@ -11,13 +11,12 @@ const Footer = ({translation}) => {
     <div className="flex flex-col gap-10 lg:flex-row">
         <div className="flex flex-col items-center justify-center flex-1 ">
             <Image 
-                src="/logo-white.png"
+                src="/logo-text.png"
                 alt="footer"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
             />
-            <h1 className="text-4xl">Trust Agency</h1>
-            <p className="text-sm text-gray-500">{translation.together}</p>
+            <p className="mt-2 text-sm text-gray-500">{translation.together}</p>
             <FollowIcons 
             translation={{
                 follow:translation.follow

@@ -22,8 +22,7 @@ const AboutHeader = ({translation}) => {
         </div>
     <div className="flex flex-col gap-10 mx-10 mb-40 lg:gap-20 md:flex-row lg:mx-36">
       <div className="flex flex-col items-center self-center justify-center justify-self-center">
-      <Image  src="/logo-white.png" width={300} height={300}  alt="logo"/>
-      <h1 className="text-sm tracking-widest uppercase " style={{letterSpacing:7}}>Trust Agency</h1>
+      <Image  src="/logo-text.png" width={300} height={300}  alt="logo"/>
       </div>
       <div className="flex flex-col items-start justify-center" >
       <h1 className="relative z-10 text-xl font-bold uppercase lg:text-3xl" >

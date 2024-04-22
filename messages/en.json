@@ -260,6 +260,31 @@
 				"smPoint5": "Usability Testing:  ",
 				"smPoint5Description": " Ensuring your software is intuitive and user-friendly for all audiences.",
 				"weProvide": "We provide a comprehensive application roach to quality control, safeguarding your software's functionality, performance, and user experience"
+			},
+			"sap": {
+				"sap": "SAP",
+				"subtitle1": "which stands for Systems, Applications, and Products in Data Processing.",
+				"smPoint1": "Customer Relationship Management (CRM): ",
+				"smPoint1Description": "Managing customer interactions, sales, marketing campaigns, and service delivery to enhance customer satisfaction and loyalty.",
+				"smPoint2": "Supply Chain Management (SCM): ",
+				"smPoint2Description": "Optimizing supply chain operations from planning and procurement to manufacturing and distribution to reduce costs and enhance responsiveness.",
+				"smPoint3": "Industry-Specific Solutions: ",
+				"smPoint3Description": "Offering tailored solutions for specific industries such as retail, manufacturing, healthcare, banking, and utilities to address unique challenges and requirements.",
+				"overAll": "Overall, SAP services help businesses streamline operations, optimize processes, drive growth, and achieve strategic objectives through advanced technology solutions and expertise."
+			},
+			"pos": {
+				"pos": "POS",
+				"subtitle1": " POS Concept is growing increasingly elaborate, with features that allow retailers to monitor inventory and buying trends, track pricing accuracy, and collect marketing data:",
+				"smPoint1": "Cash registers: .",
+				"smPoint1Description": "While not as common these days, cash registers are still a type of POS device.",
+				"smPoint2": "Self-service kiosks: ",
+				"smPoint2Description": "These are becoming more and more popular, especially in fast food restaurants. They allow customers to order and pay for their food themselves.",
+				"smPoint3": "Barcode scanners:",
+				"smPoint3Description": " These are used to scan the barcodes of items so that the price can be automatically added to the sale.",
+				"smPoint4": "Receipt printers: ",
+				"smPoint4Description": " These are used to print receipts for customers.",
+				"smPoint5": "Cash drawers: ",
+				"smPoint5Description": "These hold the cash that is taken in during sales."
 			}
 		},
 		"investment": {
@@ -368,7 +393,45 @@
 		"ourVision": "Our Vision",
 		"vision": "We want to be a leading company in the field of marketing and business, and we want to create a base of customers who trust us and have loyalty to us.  We want to expand within Egypt and the Gulf and spread across a wide range.",
 		"ourMission": "Our Mission",
-		"mission": "Our major purpose is to assist businesses succeed by building initiatives and delivering full services that enable them to achieve remarkable results. In the first year, we hope to target the success of 20 clients in Egypt and 5 clients beyond Egypt.  Share our successes and collaborate to become one of our cherished customers who receive outstanding service."
+		"mission": "Our major purpose is to assist businesses succeed by building initiatives and delivering full services that enable them to achieve remarkable results. In the first year, we hope to target the success of 20 clients in Egypt and 5 clients beyond Egypt.  Share our successes and collaborate to become one of our cherished customers who receive outstanding service.",
+		"ourTeamMembers": {
+			"name1": "DR. Mahmoud Hegazy",
+			"role1": "CEO & Founder",
+			"description1": "",
+			"name2": "Asmaa Farid ",
+			"role2": "Social Media Specialist",
+			"description2": "Worked in the field of marketing since 2021, and in these years I have gained many experiences in many fields such as the Medical field, Restaurant and Café, Fashion, Real-estate, etc. What can she do?  Social media calendars , Create content for each platform, Media buying and Analysis and reports.",
+			"name3": "Asmaa Ashraf",
+			"role3": "Content Creator ",
+			"description3": "Experienced in marketing agencies since 2022.  \n Worked as a content creator in varient fields, such as medicine, restaurants, cars, fashion, etc.\n She passionately creates social media content, scripts, copies, and articles. ",
+			"name4": "Nayera Shrief ",
+			"role4": "Media Buyer",
+			"description4": "With a 6 years of experience, starting with content creation & copywriting passed by social media then Digital performance.",
+			"name5": "Toqa Medhat ",
+			"role5": "Social Media Moderator ",
+			"description5": "Experienced in social media moderation and how make a deal with the customers",
+			"name6": "Nada Amr  ",
+			"role6": "Pr Manager  ",
+			"description6": "Experience in public relation sector and how to haunt a great deals with the sponsors",
+			"name7": "Nour Elnems  ",
+			"role7": "Social Media Moderator",
+			"description7": "Experienced in social media moderation and how make a deal with the customers",
+			"name8": "Helana ",
+			"role8": "Graphic designer & Motion graphics ",
+			"description8": "Experience in the field of design since 2022 \n who has gained hands on experience in social media designs and printing",
+			"name9": "Mohammed Amr  ",
+			"role9": "Graphic designer & Motion Ggraphics ",
+			"description9": "Working in the graphic design field since 2022, gained great ideas through training with graphic companies and worked in the field of motion graphics since 2023",
+			"name10": "Osama Abdelmoez Taha",
+			"role10": "Graphic designer",
+			"description10": "A graphic designer interested in the field of advertising industry who worked in more than one major advertising agency in Egypt and the Arab world and participated in the marketing journey of more than 50 brands in Egypt and the Arab world.",
+			"name11": "Marwan Reda",
+			"role11": "Sales Manager",
+			"description11": "A seasoned Sales Manager with over 3 years of experience in driving growth and fostering relationships. Currently, I lead the sales team at Trust, a dynamic marketing agency committed to delivering results that matter. ",
+			"name12": "Mohammed Kamel  ",
+			"role12": "Software Engineer",
+			"description12": "passionate software engineer with 3 years of experience in varient domains, Medical systems, ERB systems, Media applications, E-commerce systems and SAP. \n Have experience in varient markets too like GCC and Egypt."
+		}
 	},
 	"Globals": {
 		"close": "Close",
@@ -388,5 +451,10 @@
 		"links": "Links:",
 		"copyrights": "Copyright @2024 | All rights reserved",
 		"together": "Together, We can create a Great future"
+	},
+	"validation": {
+		"invalid": "Invalid Data",
+		"messageNotSent": "Couldn't send your message",
+		"thanks": "Thank you for reaching out."
 	}
 }

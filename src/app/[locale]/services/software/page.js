@@ -1,4 +1,4 @@
-import { DesktopApp, MobileApplications, SoftwareHeader, SoftwareQuality } from "components";
+import { DesktopApp, MobileApplications, POS, SAP, SoftwareHeader, SoftwareQuality } from "components";
 import { useTranslations } from "next-intl";
 import {unstable_setRequestLocale,getTranslations} from 'next-intl/server';
 
@@ -24,6 +24,8 @@ const Software = ({params}) => {
   const mobileT=useTranslations("Services.software.mobileApplication")
   const desktopT=useTranslations("Services.software.desktopApplication")
   const qualityT=useTranslations("Services.software.softwareQualityControl")
+  const sapT=useTranslations("Services.software.sap")
+  const posT=useTranslations("Services.software.pos")
 
   return (
     <>
@@ -98,6 +100,36 @@ const Software = ({params}) => {
       smPoint5Description:qualityT("smPoint5Description"),
       weProvide:qualityT("weProvide"),
     }}
+  />
+  <SAP
+    translation={{
+      sap:sapT("sap"),
+      subtitle1:sapT("subtitle1"),
+      smPoint1:sapT("smPoint1"),
+      smPoint1Description:sapT("smPoint1Description"),
+      smPoint2:sapT("smPoint2"),
+      smPoint2Description:sapT("smPoint2Description"),
+      smPoint3:sapT("smPoint3"),
+      smPoint3Description:sapT("smPoint3Description"),
+      overAll:sapT("overAll"),
+    }}
+  />
+
+  <POS
+      translation={{
+        pos:posT("pos"),
+        subtitle1:posT("subtitle1"),
+        smPoint1:posT("smPoint1"),
+        smPoint1Description:posT("smPoint1Description"),
+        smPoint2:posT("smPoint2"),
+        smPoint2Description:posT("smPoint2Description"),
+        smPoint3:posT("smPoint3"),
+        smPoint3Description:posT("smPoint3Description"),
+        smPoint4:posT("smPoint4"),
+        smPoint4Description:posT("smPoint4Description"),
+        smPoint5:posT("smPoint5"),
+        smPoint5Description:posT("smPoint5Description"),
+      }}
   />
 
     </>
