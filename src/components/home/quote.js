@@ -50,7 +50,7 @@ const Quote = ({translation}) => {
         </div>
        </div>
     </div>
-    <Blob height={300} width={200} position={{...locale==="ar"?{left:0}:{right:0},bottom:0}}/>
+    <Blob height={300} width={200} position={{...locale==="ar"?{left:0}:{right:0},bottom:0,zIndex:-1}} />
 
   </div>
   )
