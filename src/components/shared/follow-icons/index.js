@@ -31,7 +31,7 @@ const FollowIcons = ({translation}) => {
         target="_blank"
         href="https://www.linkedin.com/in/trustagency24/"
          className="box-border p-1 m-0 bg-white rounded-sm">
-          <Image src="/linkedIn.png" width={20} height={20} alt="instagram"/>
+          <Image src="/LinkedIn.png" width={20} height={20} alt="instagram"/>
         </Link>
         <Link
         target="_blank"
