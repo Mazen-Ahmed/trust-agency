@@ -24,7 +24,6 @@ const ContactHeader = ({translation}) => {
   const onBlurHandler = ({ target }) => setTouched((prev) => ({ ...prev, [target.name]: true }));
 
   const changeFormValueHandler=(event)=>{
-    console.log(event.target.name);
     setValues(()=>({
         ...values,
         [event.target.name]:event.target.value
