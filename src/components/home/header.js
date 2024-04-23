@@ -7,6 +7,8 @@ import {useLocale} from "next-intl"
 const Header = ({translation}) => {
   const locale=useLocale()
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
   const trustImages = [
         '/text-1-bg1.png',
         '/text-1-bg2.png',
@@ -18,13 +20,11 @@ const Header = ({translation}) => {
         '/text-2-bg2.png',
         '/text-2-bg3.png',
       ];
-        
-      const [currentIndex, setCurrentIndex] = useState(0);
   
       useEffect(() => {
         const intervalId = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % trustImages.length);
-        }, 2000);
+        }, currentIndex===0?4000:2000 );
     
         return () => clearInterval(intervalId);
       }, [trustImages.length]);
