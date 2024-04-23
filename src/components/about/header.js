@@ -31,7 +31,7 @@ const AboutHeader = ({translation}) => {
         <p className="h-8 my-4 mb-6 text-lg text-gray-500 break-words xs:20 md:text-xl">
         {translation.description}
         </p>
-        <p className="h-8 my-2 text-lg text-gray-500 break-words xs:20 md:text-xl">
+        <p className="h-8 my-6 text-lg text-gray-500 break-words md:my2 xs:20 md:text-xl">
         {translation.journey}
         </p>
         <p className="h-8 my-2 text-lg text-gray-500 break-words xs:20 md:text-xl">

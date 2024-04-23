@@ -35,7 +35,7 @@ const CustomCarousel = ({ slidesPerView = 3, data }) => {
 						className="mySwiper">
 						{data.map((item, index) => (
 							<SwiperSlide key={index}>
-								<div className="flex flex-col items-center justify-center w-full h-full gap-5 px-48">
+								<div className="flex flex-col items-center justify-center w-full h-full gap-5 md:px-48">
 									<div className="text-center">
 										{item.quote}
 									</div>
@@ -49,7 +49,7 @@ const CustomCarousel = ({ slidesPerView = 3, data }) => {
 										className="block object-cover object-top w-full h-full rounded-full"
 										/>
 								</div>
-									<h1 className="text-lg font-semibold">
+									<h1 className= "font-semibold text-md md:text-lg">
 										{item.name}
 									</h1>
 									<h2 className="text-sm">{item.role}</h2>

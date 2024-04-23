@@ -22,7 +22,7 @@ const Quote = ({translation}) => {
 
 
     <div 
-      className="relative flex-1 hidden w-full overflow-hidden md:flex "
+      className="relative flex-1 hidden w-full md:flex "
       style={{ ...leftElement}}
     >
         <Image src="/quote.png" fill  alt='img' className=" w-36 h-36 md:w-3/4 md:h-3/4" />

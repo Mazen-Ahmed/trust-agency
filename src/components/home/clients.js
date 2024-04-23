@@ -21,7 +21,7 @@ const Clients = ({translation}) => {
         <div style={{...element}} className="flex items-center justify-center flex-1 ">
             <div className="relative overflow-hidden bg-white rounded-lg h-80 client">
             <Image className="image" src="/Client-1.png" width={250} height={200} alt="client"/>
-            <div className="absolute bottom-0 left-0 w-full px-4 overflow-hidden text-black max-h-0 coInfo" style={{background:"rgba(0,0,0,0.7)"}}>
+            <div className="absolute bottom-0 left-0 w-full px-4 overflow-hidden text-white max-h-0 coInfo" style={{background:"rgba(0,0,0,0.7)"}}>
                 <h1 className="text-lg font-semibold">Co. Founder:</h1>
                 <h1 className="text-2xl font-bold ">Nada Amr</h1> 
             </div>
@@ -31,7 +31,7 @@ const Clients = ({translation}) => {
         <div style={{...element}} className="flex items-center justify-center flex-1 ">
         <div className="relative overflow-hidden bg-white rounded-lg h-80 client">
             <Image className="image" src="/Client-2.png" width={250} height={200} alt="client"/>
-             <div className="absolute bottom-0 left-0 w-full px-4 overflow-hidden text-black max-h-0 coInfo" style={{background:"rgba(0,0,0,0.7)"}}>
+             <div className="absolute bottom-0 left-0 w-full px-4 overflow-hidden text-white max-h-0 coInfo" style={{background:"rgba(0,0,0,0.7)"}}>
                 <h1 className="text-lg font-semibold">Co. Founder:</h1>
                 <h1 className="text-2xl font-bold ">Reem Mohammed</h1> 
             </div>

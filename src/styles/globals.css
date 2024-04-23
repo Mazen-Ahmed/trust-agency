@@ -23,7 +23,8 @@
 	-webkit-text-fill-color: initial;
 }
 .animated {
-	overflow-x: hidden;
+	overflow-x: visible;
+	overflow-y: visible;
 }
 body {
 	overflow-x: hidden !important;
@@ -140,6 +141,9 @@ body {
 @media only screen and (max-width: 650px) {
 	.heading {
 		font-size: 90px;
+	}
+	.animated {
+		overflow-x: hidden;
 	}
 }
 
