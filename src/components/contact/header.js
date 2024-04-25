@@ -56,7 +56,7 @@ const ContactHeader = ({translation}) => {
            </h1>
        </div>
    <div className="flex flex-col items-start justify-center gap-10 mx-10 mb-40 min-h-48 md:flex-row lg:mx-24">
-   <div className="flex flex-col items-start self-center justify-center flex-1 w-full justify-self-center ">
+   <div className="flex flex-col items-center self-center justify-center flex-1 w-full justify-self-center ">
       {
         error&& <div className="w-full p-2 text-red-900 bg-red-300 rounded-sm text-md">{translation.messageNotSent}</div>
       }
@@ -145,7 +145,7 @@ const ContactHeader = ({translation}) => {
         </form>
       </div>
 
-     <div className="flex flex-col items-start justify-center flex-1" >
+     <div className="flex flex-col items-center justify-center flex-1" >
        <p className="flex items-center justify-start h-8 gap-5 my-4 text-white break-words md:text-md">
        <MdOutlineLocationOn className="w-6 h-6"/>45 Kambez, Nadi Al Saeed, Dokki, <br/> Giza Governorate 12311
        </p>

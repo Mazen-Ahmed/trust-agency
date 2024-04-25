@@ -48,8 +48,8 @@ const Header = ({translation}) => {
     }}>
         Trust-  
       </h1>
-      <div dir="ltr" className="flex-col items-center self-center justify-center hidden md:flex ">
-        <Image  src="/logo-text.png" width={130} height={130}  className="object-cover h-full mx-8"   alt="logo"/>
+      <div dir="ltr" className="flex-col items-center self-center justify-center hidden h-full md:flex ">
+        <Image  src="/logo-text.png" width={90} height={40}  className="object-cover mx-8"   alt="logo"/>
       </div>
     </div>
     <div dir="ltr"  className="flex flex-col justify-end leading-none align-start lg:flex-row ">

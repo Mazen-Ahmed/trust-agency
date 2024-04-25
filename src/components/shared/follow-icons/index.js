@@ -1,14 +1,14 @@
 import { Link } from "navigation";
 import Image from "next/image"
-import { FaFacebookF,FaInstagram,   } from "react-icons/fa";
-import { FaXTwitter,FaLinkedinIn, FaYoutube, FaTiktok    } from "react-icons/fa6";
+import { FaFacebookF,   } from "react-icons/fa";
+import { FaXTwitter, FaYoutube, FaTiktok    } from "react-icons/fa6";
 
 const FollowIcons = ({translation}) => {
 
   return (
     <div className="flex flex-col items-center justify-center mt-5">
     <h1>{translation.follow}</h1>
-    <div className="flex gap-4">
+    <div className="flex gap-4 mt-2">
         <Link
          href="https://www.facebook.com/profile.php?id=61556979881747&mibextid=eQY6cl"
          target="_blank"
