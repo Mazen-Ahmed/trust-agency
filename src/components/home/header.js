@@ -24,7 +24,7 @@ const Header = ({translation}) => {
       useEffect(() => {
         const intervalId = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % trustImages.length);
-        }, currentIndex===0?4000:2000 );
+        }, 2000 );
     
         return () => clearInterval(intervalId);
       }, [trustImages.length]);

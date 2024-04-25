@@ -13,7 +13,7 @@ const SAP = ({translation}) => {
     overAll,
   }=translation
 return (
-  <Container   imageSrc={"/desktop.png"}  imageOrder={1} divOrder={2}>
+  <Container   imageSrc={"/SAP.png"}  imageOrder={1} divOrder={2}>
     <div>
         <h1>
       <li  className="text-3xl " style={{listStyleType:"square"}}>

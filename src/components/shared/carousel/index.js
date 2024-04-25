@@ -47,6 +47,7 @@ const CustomCarousel = ({ slidesPerView = 3, data }) => {
 										width={150}
 										height={150}
 										className="block object-cover object-top w-full h-full rounded-full"
+										loading={"eager"}
 										/>
 								</div>
 									<h1 className= "font-semibold text-md md:text-lg">

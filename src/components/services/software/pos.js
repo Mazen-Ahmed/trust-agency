@@ -20,7 +20,7 @@ const POS = ({translation}) => {
       divOrder={1}
       imageOrder={2}
       background={"#1f2124"}
-      imageSrc={"/sw-quality.png"} >
+      imageSrc={"/POS.png"} >
       <div className="py-4">
           <h1>
         <li  className="text-3xl " style={{listStyleType:"square"}}>

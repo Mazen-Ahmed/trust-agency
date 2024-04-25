@@ -155,7 +155,6 @@ const ContactHeader = ({translation}) => {
        <div className="flex items-center justify-start h-8 gap-5 my-4 text-white break-words md:text-lg">
        <FaPhoneVolume className="w-5 h-5"/> 
        <div className="flex flex-col gap-2">
-       <span dir="ltr">01103076238 | 0233365113</span>
        <span dir="ltr">01500299777 | 01022129888</span>
        </div>
        </div>
