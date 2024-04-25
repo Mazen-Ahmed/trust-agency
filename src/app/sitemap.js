@@ -13,7 +13,7 @@ const pathnames = [
   "/services/Ecommerce",
 ];
 
-const host = "https://trust-agency.netlify.app";
+const host = "https://trustagency.org";
 
 export default function sitemap() {
   return pathnames.map((pathname) => {
