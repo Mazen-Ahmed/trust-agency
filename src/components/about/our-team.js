@@ -98,12 +98,6 @@ const OurTeam = ({translation}) => {
             quote:description8
         },
         {
-            img:"/Mohammed Amr .jpg",
-            name:name9,
-            role:role9,
-            quote:description9
-        },
-        {
             img:"/Osama Abdelmoez.png",
             name:name10,
             role:role10,
