@@ -49,19 +49,20 @@ const OurTeam = ({translation}) => {
     
     const carouselData=[
         {
-            img:"/Mahmoud Hegazy.jpg",
+            img:"/Mahmoud Hegazy.png",
             name:name1,
             role:role1,
-            quote:description1
+            quote:description1,
+            position:"object-left-top"
         },
         {
-            img:"/Asmaa Farid.jpg",
+            img:"/Asmaa Farid.png",
             name:name2,
             role:role2,
             quote:description2
         },
         {
-            img:"/Asmaa Ashraf.jpg",
+            img:"/Asmaa Ashraf.png",
             name:name3,
             role:role3,
             quote:description3
@@ -79,7 +80,7 @@ const OurTeam = ({translation}) => {
             quote:description5
         },
         {
-            img:"/Nada Amr .jpg",
+            img:"/Nada Amr.png",
             name:name6,
             role:role6,
             quote:description6
@@ -91,7 +92,7 @@ const OurTeam = ({translation}) => {
             quote:description7
         },
         {
-            img:"/Helana.webp",
+            img:"/Hellana.png",
             name:name8,
             role:role8,
             quote:description8
@@ -109,13 +110,13 @@ const OurTeam = ({translation}) => {
             quote:description10
         },
         {
-            img:"/Marwan.jpeg",
+            img:"/Marwan Reda.png",
             name:name11,
             role:role11,
             quote:description11
         },
         {
-            img:"/Mohammed Kamel.JPG",
+            img:"/Mohamed Kamel.png",
             name:name12,
             role:role12,
             quote:description12

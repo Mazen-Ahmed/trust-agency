@@ -44,9 +44,9 @@ const CustomCarousel = ({ slidesPerView = 3, data }) => {
 									<Image
 										src={item.img}
 										alt="member"
-										width={150}
-										height={150}
-										className="block object-cover object-top w-full h-full rounded-full"
+										width={300}
+										height={300}
+										className={`block object-cover ${item.position||"object-top"} w-full h-full rounded-full`}
 										loading={"eager"}
 										/>
 								</div>

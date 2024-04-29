@@ -1,7 +1,7 @@
 "use client"
-import Image from "next/image"
+import  NextImage from "next/image"
 import {Arrow, Blob} from "components"
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {motion} from 'framer-motion'
 import {useLocale} from "next-intl"
 const Header = ({translation}) => {
@@ -9,18 +9,22 @@ const Header = ({translation}) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  const trustImages = [
-        '/text-1-bg1.png',
-        '/text-1-bg2.png',
-        '/text-1-bg3.png',
-      ];
+  const trustImages =useMemo(()=>(
+          [
+            '/text-1-bg1.png',
+            '/text-1-bg2.png',
+            '/text-1-bg3.png',
+          ]
+        ),[]) 
 
-  const agencyImages = [
-        '/text-2-bg1.png',
-        '/text-2-bg2.png',
-        '/text-2-bg3.png',
-      ];
-  
+  const agencyImages =useMemo(()=>(
+        [
+          '/text-2-bg1.png',
+          '/text-2-bg2.png',
+          '/text-2-bg3.png',
+        ]
+      ),[]) 
+      
       useEffect(() => {
         const intervalId = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % trustImages.length);
@@ -29,6 +33,20 @@ const Header = ({translation}) => {
         return () => clearInterval(intervalId);
       }, [trustImages.length]);
     
+      useEffect(() => {
+        const preloadImages = () => {
+          [...trustImages,...agencyImages].forEach((image) => {
+            const img = new Image();
+            img.src = image;
+          });
+        };
+    
+        preloadImages();
+    
+        // Cleanup function
+        return () => {
+        };
+      }, [trustImages,  agencyImages]);
     
   return (
     <header className="relative w-4/5 h-screen py-40 mx-auto md:py-3 lg:h-32 md:px-10 lg:px-20"
@@ -49,7 +67,7 @@ const Header = ({translation}) => {
         Trust-  
       </h1>
       <div dir="ltr" className="flex-col items-center self-center justify-center hidden h-full md:flex ">
-        <Image  src="/logo-text.png" width={98} height={40}  className="object-cover mx-8"   alt="logo"/>
+        <NextImage  src="/logo-text.png" width={98} height={40}  className="object-cover mx-8"   alt="logo"/>
       </div>
     </div>
     <div dir="ltr"  className="flex flex-col justify-end leading-none align-start lg:flex-row ">
